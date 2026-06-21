@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Service Center | FixPoint</title>
+    <meta name="description" content="Find our service center location. Contact FixPoint via email, phone, or send an inquiry. Walk-ins welcome daily.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Title Banner -->
+    <section class="section-padding hero-banner" style="padding-top: 140px; padding-bottom: 90px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-screwdriver-wrench banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div class="section-title-block scroll-animate animated">
+                <p>Get in Touch</p>
+                <h1>Connect With Our <span class="glow-text">Service Center</span></h1>
+                <div class="subtitle">Have a question regarding repair estimates, trade-in deals, or accessory stock? Call us, email, or drop by our retail counter.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section class="section-padding" style="padding-top: 30px;">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Info Section -->
+                <div class="contact-info-grid scroll-animate">
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Direct Call</h4>
+                            <a href="tel:+15554928822" style="color: var(--text-primary); font-weight:600; font-size:16px; margin-top:5px; display:inline-block; text-decoration:none; transition:color var(--transition-fast);">+1 (555) 492-8822</a>
+                            <p>Mon-Fri, 9:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email Queries</h4>
+                            <p style="color: var(--text-primary); font-weight:600; margin-top:5px;">support@fixpoint.com</p>
+                            <p>Typical response time: 2 hours</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Service Center Location</h4>
+                            <p style="color: var(--text-primary); font-weight:600; margin-top:5px;">West Galleria Mall, Ground Level</p>
+                            <p>Service Center #4 (Directly opposite Starbucks entrance)</p>
+                            <p>Tech City, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <div class="map-container" style="border-radius: var(--radius-md); overflow: hidden; min-height: 280px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183792036655!2d-73.98823492404069!3d40.75797623440722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style="border: 0; width: 100%; height: 100%; min-height: 280px; display: block; border-radius: var(--radius-md);"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="FixPoint Service Center Location">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Form Section -->
+                <div class="glass-card scroll-animate" style="padding: 40px;">
+                    <h3 style="font-size: 24px; margin-bottom: 20px; font-family: var(--font-heading);">Send a <span class="glow-text">Message</span></h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully! Our customer support team will contact you shortly.'); this.reset();" style="display:flex; flex-direction:column; gap:20px;">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" class="input-custom" placeholder="e.g. John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="input-custom" placeholder="e.g. john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" class="input-custom" placeholder="e.g. (555) 000-1234" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <select id="contact-subject" class="select-custom" required>
+                                <option value="" disabled selected>Select subject...</option>
+                                <option value="repair">Repair Estimate Query</option>
+                                <option value="tradein">Trade-in Device Valuation</option>
+                                <option value="stock">Accessory Stock Inquiry</option>
+                                <option value="corporate">Corporate Accounts</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Message Details</label>
+                            <textarea id="contact-message" class="input-custom" rows="4" style="resize:none;" placeholder="Tell us what you need help with..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <script>
+        // Subject autofill check from URL hash params
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const subjectParam = params.get('subject');
+            if (subjectParam) {
+                const selectEl = document.getElementById('contact-subject');
+                if (selectEl) {
+                    if (subjectParam.startsWith('Buy-')) {
+                        // Switch select to stock inquiry and pre-populate message
+                        selectEl.value = 'stock';
+                        document.getElementById('contact-message').value = `Hi FixPoint, I am interested in purchasing the certified device: ${subjectParam.replace('Buy-', '').replace(/([A-Z])/g, ' $1').trim()}. Is it still available in stock at the service center?`;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

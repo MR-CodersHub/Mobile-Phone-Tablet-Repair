@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixPoint | Premium Mobile Phone & Tablet Service Center</title>
+    <meta name="description"
+        content="FixPoint offers high-speed, premium repairs for smartphones and tablets. Certified screen, battery, and logic board repair with a lifetime warranty.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo"
+                        style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+        <div style="text-align: center; color: var(--text-muted); font-size: 12px; margin-top: 30px;">
+            &copy; 2026 FixPoint. All rights reserved.
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero hero-enhanced scroll-animate animated"
+        style="background-image: radial-gradient(circle at 10% 20%, rgba(255, 85, 0, 0.05) 0%, transparent 50%);">
+        <div class="hero-deco-ring hero-deco-ring-1"></div>
+        <div class="hero-deco-ring hero-deco-ring-2"></div>
+        <div class="hero-deco-ring hero-deco-ring-3"></div>
+        <div class="hero-deco-dot hero-deco-dot-1"></div>
+        <div class="hero-deco-dot hero-deco-dot-2"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span
+                        style="font-size: 13px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; letter-spacing: 0.15em; display: inline-block; margin-bottom: 15px; background: rgba(255,85,0,0.1); padding: 5px 12px; border-radius: var(--radius-full);"><i
+                            class="fas fa-screwdriver-wrench"></i> Professional Service Center</span>
+                    <h1>Fast & Premium<br><span class="glow-text">Device Repairs</span></h1>
+                    <p>Is your smartphone display fractured or battery draining fast? Bring it to FixPoint. We complete
+                        most glass, battery, and port swaps in 20 minutes with original-grade parts and a lifetime parts
+                        guarantee.</p>
+                    <div class="hero-buttons">
+                        <a href="booking.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                            Express Appointment</a>
+                        <a href="repairs.html" class="btn btn-secondary"><i class="fas fa-calculator"></i> Get Free
+                            Estimate</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-glow-bg"></div>
+                    <div class="hero-showcase-container">
+                        <!-- Floating Accents - Repair Focused -->
+                        <div class="floating-accent floating-accent-1"><i class="fas fa-wrench"></i></div>
+                        <div class="floating-accent floating-accent-2"><i class="fas fa-microscope"></i></div>
+                        <div class="floating-accent" style="position:absolute; bottom:60px; right:10px; font-size:18px; color:var(--accent-orange); opacity:0.3; animation:float 4s ease-in-out infinite;"><i class="fas fa-magnifying-glass"></i></div>
+                        <div class="floating-accent" style="position:absolute; top:80px; left:-10px; font-size:14px; color:var(--color-accent-green); opacity:0.2; animation:float 5s ease-in-out infinite 1s;"><i class="fas fa-gear"></i></div>
+                        <!-- Hero SVG Illustration -->
+                        <div class="hero-showcard" style="max-width: 420px; padding: 20px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <span
+                                    style="font-size: 11px; font-weight: 700; color: var(--accent-orange); background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full);"><i
+                                        class="fas fa-bolt"></i> Express Lab</span>
+                                <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 600;"><i
+                                        class="fas fa-shield-check"></i> Lifetime Parts Guarantee</span>
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="assets/repair-scene.svg" alt="Phone repair workspace illustration"
+                                    style="max-height: 260px; width: 100%; margin: 0 auto; display: block;">
+                            </div>
+                            <div
+                                style="border-top: 1px solid var(--border-glass); padding-top: 12px; display: flex; justify-content: space-between; align-items: center; font-size: 13px;">
+                                <span><i class="fas fa-user-gear" style="color:var(--accent-orange);"></i> Certified Techs</span>
+                                <span style="color:var(--color-accent-green); font-weight:700;"><i class="fas fa-circle-check"></i> 100% Calibrated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Strip -->
+    <section class="stat-strip">
+        <div class="container">
+            <div class="stat-strip-grid">
+                <div class="stat-strip-item">
+                    <h4>15,000+</h4>
+                    <p>Devices Repaired</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>12,000+</h4>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>8+ Years</h4>
+                    <p>Technician Experience</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>10+ Level-3</h4>
+                    <p>Certified Technicians</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>What We Do</p>
+                <h2>Our Repair <span class="glow-text">Expertise</span></h2>
+                <div class="subtitle">From cracked screens to water-damaged logic boards, our certified technicians repair all issues fast — with upfront pricing and a lifetime warranty.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <!-- Card 1: Screen -->
+                <div class="glass-card service-card" style="display:flex; flex-direction:column; height:100%; border-top: 3px solid var(--accent-orange);">
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                            <div class="service-icon" style="margin:0; width:48px; height:48px;"><i class="fas fa-mobile-alt"></i></div>
+                            <span style="font-size:10px; font-weight:700; color:#00ff66; background:rgba(0,255,102,0.1); padding:4px 10px; border-radius:var(--radius-full);">20 Mins</span>
+                        </div>
+                        <h3 style="font-size:20px; margin-bottom:8px;">Screen Replacement</h3>
+                        <p style="color:var(--text-secondary); font-size:13.5px; line-height:1.5; margin-bottom:12px;">Shattered glass or bleeding LCD? We replace screens with OEM-grade panels and recalibrate True Tone & touch sensitivity.</p>
+                        <div style="display:flex; gap:15px; margin-bottom:15px; font-size:13px;">
+                            <span style="color:var(--text-muted);">From</span>
+                            <span style="font-weight:800; font-size:20px; color:var(--text-primary); font-family:var(--font-heading);">$89</span>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:auto; border-top:1px solid var(--border-glass); padding-top:15px;">
+                        <a href="booking.html" class="btn btn-primary" style="padding:10px 18px; font-size:13px; flex:1; text-align:center;">Book Now</a>
+                        <a href="screen-repair.html" style="padding:10px 18px; font-size:13px; color:var(--text-secondary);">Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 2: Battery -->
+                <div class="glass-card service-card" style="display:flex; flex-direction:column; height:100%; border-top: 3px solid var(--accent-orange);">
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                            <div class="service-icon" style="margin:0; width:48px; height:48px;"><i class="fas fa-battery-three-quarters"></i></div>
+                            <span style="font-size:10px; font-weight:700; color:#00ff66; background:rgba(0,255,102,0.1); padding:4px 10px; border-radius:var(--radius-full);">15 Mins</span>
+                        </div>
+                        <h3 style="font-size:20px; margin-bottom:8px;">Battery Replacement</h3>
+                        <p style="color:var(--text-secondary); font-size:13.5px; line-height:1.5; margin-bottom:12px;">Phone draining fast or shutting down randomly? We install certified high-capacity batteries with eco-friendly disposal.</p>
+                        <div style="display:flex; gap:15px; margin-bottom:15px; font-size:13px;">
+                            <span style="color:var(--text-muted);">From</span>
+                            <span style="font-weight:800; font-size:20px; color:var(--text-primary); font-family:var(--font-heading);">$49</span>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:auto; border-top:1px solid var(--border-glass); padding-top:15px;">
+                        <a href="booking.html" class="btn btn-primary" style="padding:10px 18px; font-size:13px; flex:1; text-align:center;">Book Now</a>
+                        <a href="battery-replacement.html" style="padding:10px 18px; font-size:13px; color:var(--text-secondary);">Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 3: Charging Port -->
+                <div class="glass-card service-card" style="display:flex; flex-direction:column; height:100%; border-top: 3px solid var(--accent-orange);">
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                            <div class="service-icon" style="margin:0; width:48px; height:48px;"><i class="fas fa-plug"></i></div>
+                            <span style="font-size:10px; font-weight:700; color:#00ff66; background:rgba(0,255,102,0.1); padding:4px 10px; border-radius:var(--radius-full);">25 Mins</span>
+                        </div>
+                        <h3 style="font-size:20px; margin-bottom:8px;">Charging Port Repair</h3>
+                        <p style="color:var(--text-secondary); font-size:13.5px; line-height:1.5; margin-bottom:12px;">Device not charging or connection loose? We clean debris, realign pins, or replace the entire charging flex assembly.</p>
+                        <div style="display:flex; gap:15px; margin-bottom:15px; font-size:13px;">
+                            <span style="color:var(--text-muted);">From</span>
+                            <span style="font-weight:800; font-size:20px; color:var(--text-primary); font-family:var(--font-heading);">$59</span>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:auto; border-top:1px solid var(--border-glass); padding-top:15px;">
+                        <a href="booking.html" class="btn btn-primary" style="padding:10px 18px; font-size:13px; flex:1; text-align:center;">Book Now</a>
+                        <a href="charging-port-repair.html" style="padding:10px 18px; font-size:13px; color:var(--text-secondary);">Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Card 4: Camera -->
+                <div class="glass-card service-card" style="display:flex; flex-direction:column; height:100%; border-top: 3px solid var(--accent-orange);">
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+                            <div class="service-icon" style="margin:0; width:48px; height:48px;"><i class="fas fa-camera"></i></div>
+                            <span style="font-size:10px; font-weight:700; color:#00ff66; background:rgba(0,255,102,0.1); padding:4px 10px; border-radius:var(--radius-full);">30 Mins</span>
+                        </div>
+                        <h3 style="font-size:20px; margin-bottom:8px;">Camera Repair</h3>
+                        <p style="color:var(--text-secondary); font-size:13.5px; line-height:1.5; margin-bottom:12px;">Blurry photos, black viewfinder, or broken lens glass? We replace front, rear, and telephoto camera modules.</p>
+                        <div style="display:flex; gap:15px; margin-bottom:15px; font-size:13px;">
+                            <span style="color:var(--text-muted);">From</span>
+                            <span style="font-weight:800; font-size:20px; color:var(--text-primary); font-family:var(--font-heading);">$69</span>
+                        </div>
+                    </div>
+                    <div style="display:flex; gap:10px; margin-top:auto; border-top:1px solid var(--border-glass); padding-top:15px;">
+                        <a href="booking.html" class="btn btn-primary" style="padding:10px 18px; font-size:13px; flex:1; text-align:center;">Book Now</a>
+                        <a href="camera-repair.html" style="padding:10px 18px; font-size:13px; color:var(--text-secondary);">Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Brands We Repair -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Compatible Devices</p>
+                <h2>Top Brands We <span class="glow-text">Repair</span></h2>
+                <div class="subtitle">We service all major smartphone and tablet brands with manufacturer-grade components and precision calibration.</div>
+            </div>
+
+            <div class="scroll-animate" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto;">
+                <!-- Apple -->
+                <div class="glass-card" style="padding: 25px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; height:100%;">
+                    <div style="font-size: 36px; color: var(--accent-orange);"><i class="fab fa-apple"></i></div>
+                    <h4 style="font-size: 15px; font-weight: 700;">Apple</h4>
+                    <p style="font-size: 11px; color: var(--text-muted);">iPhone, iPad, Watch</p>
+                </div>
+                <!-- Samsung -->
+                <div class="glass-card" style="padding: 25px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; height:100%;">
+                    <div style="font-size: 36px; color: var(--accent-orange);"><i class="fas fa-mobile-screen"></i></div>
+                    <h4 style="font-size: 15px; font-weight: 700;">Samsung</h4>
+                    <p style="font-size: 11px; color: var(--text-muted);">Galaxy, Tab, Note</p>
+                </div>
+                <!-- Google -->
+                <div class="glass-card" style="padding: 25px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; height:100%;">
+                    <div style="font-size: 36px; color: var(--accent-orange);"><i class="fab fa-google"></i></div>
+                    <h4 style="font-size: 15px; font-weight: 700;">Google</h4>
+                    <p style="font-size: 11px; color: var(--text-muted);">Pixel, Tablet</p>
+                </div>
+                <!-- OnePlus -->
+                <div class="glass-card" style="padding: 25px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; height:100%;">
+                    <div style="font-size: 36px; color: var(--accent-orange);"><i class="fas fa-bolt"></i></div>
+                    <h4 style="font-size: 15px; font-weight: 700;">OnePlus</h4>
+                    <p style="font-size: 11px; color: var(--text-muted);">Nord, Pro Series</p>
+                </div>
+                <!-- Motorola -->
+                <div class="glass-card" style="padding: 25px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; height:100%;">
+                    <div style="font-size: 36px; color: var(--accent-orange);"><i class="fas fa-rotate"></i></div>
+                    <h4 style="font-size: 15px; font-weight: 700;">Motorola</h4>
+                    <p style="font-size: 11px; color: var(--text-muted);">Moto G, Edge, Razr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Our Advantages</p>
+                <h2>Why Choose <span class="glow-text">FixPoint</span></h2>
+                <div class="subtitle">We combine premium aesthetics, expert-level technical skills, and express
+                    turnaround times to deliver an unmatched repair service.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <!-- Advantage 1 -->
+                <div class="glass-card" style="padding: 30px; text-align: center;">
+                    <div style="font-size: 32px; color: var(--accent-orange); margin-bottom: 15px;"><i
+                            class="fas fa-history"></i></div>
+                    <h3 style="font-size: 19px; margin-bottom: 10px;">20-Min Express Repair</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">90% of screen breaks
+                        and battery swaps are resolved in under 20 minutes while you browse the mall.</p>
+                </div>
+                <!-- Advantage 2 -->
+                <div class="glass-card" style="padding: 30px; text-align: center;">
+                    <div style="font-size: 32px; color: var(--accent-orange); margin-bottom: 15px;"><i
+                            class="fas fa-award"></i></div>
+                    <h3 style="font-size: 19px; margin-bottom: 10px;">Lifetime Part Warranty</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">We stand behind our
+                        materials. If your display touch response fails, we swap it out for free under warranty.</p>
+                </div>
+                <!-- Advantage 3 -->
+                <div class="glass-card" style="padding: 30px; text-align: center;">
+                    <div style="font-size: 32px; color: var(--accent-orange); margin-bottom: 15px;"><i
+                            class="fas fa-shield-alt"></i></div>
+                    <h3 style="font-size: 19px; margin-bottom: 10px;">Original Grade Parts</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">We prioritize premium
+                        OEM certified displays and high-capacity battery units that match original parameters.</p>
+                </div>
+                <!-- Advantage 4 -->
+                <div class="glass-card" style="padding: 30px; text-align: center;">
+                    <div style="font-size: 32px; color: var(--accent-orange); margin-bottom: 15px;"><i
+                            class="fas fa-eye"></i></div>
+                    <h3 style="font-size: 19px; margin-bottom: 10px;">Glass Bench Visibility</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">Watch your device get
+                        repaired in real-time. Our glass counter bench allows full diagnostics visibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genuine Parts & Certified Technicians Section -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Quality You Can Trust</p>
+                <h2>Genuine Parts, <span class="glow-text">Certified Experts</span></h2>
+                <div class="subtitle">Every repair uses authentic-grade components and is performed by factory-trained technicians. Here is what sets us apart.</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;" class="scroll-animate">
+
+                <!-- Card: Genuine Spare Parts -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid var(--accent-orange); display: flex; flex-direction: column; gap: 15px; height:100%;">
+                    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 5px;">
+                        <div style="font-size: 34px; color: var(--accent-orange); width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-microchip"></i></div>
+                        <div>
+                            <h3 style="font-size: 19px; margin-bottom: 4px;">Genuine Spare Parts</h3>
+                            <p style="font-size: 12px; color: var(--color-accent-green); font-weight: 700;"><i class="fas fa-circle-check"></i> OEM-Grade Certified</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">We source every component directly from certified supply chains. Each display, battery, camera module, and flex cable is batch-tested for color accuracy, mAh capacity, and signal integrity before it reaches your device.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; background: rgba(255,85,0,0.04); border-radius: var(--radius-sm); padding: 15px; border: 1px solid var(--border-glass);">
+                        <span style="color: var(--text-primary);"><i class="fas fa-check" style="color: var(--color-accent-green); width: 20px;"></i> Premium OLED displays with True Tone calibration</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-check" style="color: var(--color-accent-green); width: 20px;"></i> High-capacity batteries with overcharge protection</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-check" style="color: var(--color-accent-green); width: 20px;"></i> Original-grade charging ports and flex assemblies</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-check" style="color: var(--color-accent-green); width: 20px;"></i> Genuine camera modules with OIS stabilization</span>
+                    </div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top:auto;"><i class="fas fa-flask"></i> Every part is verified under digital microscope before installation.</p>
+                </div>
+
+                <!-- Card: Certified Technicians -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid var(--accent-orange); display: flex; flex-direction: column; gap: 15px; height:100%;">
+                    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 5px;">
+                        <div style="font-size: 34px; color: var(--accent-orange); width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-user-graduate"></i></div>
+                        <div>
+                            <h3 style="font-size: 19px; margin-bottom: 4px;">Certified Technicians</h3>
+                            <p style="font-size: 12px; color: var(--color-accent-green); font-weight: 700;"><i class="fas fa-circle-check"></i> Level-3 IPC Certified</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Our repair engineers hold industry-recognized certifications in micro-soldering, SMD rework, and advanced logic board diagnostics. Each technician averages 8+ years of hands-on device repair experience.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; background: rgba(255,85,0,0.04); border-radius: var(--radius-sm); padding: 15px; border: 1px solid var(--border-glass);">
+                        <span style="color: var(--text-primary);"><i class="fas fa-certificate" style="color: var(--accent-orange); width: 20px;"></i> IPC-7711/7721 SMD Rework Certified</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-certificate" style="color: var(--accent-orange); width: 20px;"></i> Level-3 Logic Board Diagnostics</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-certificate" style="color: var(--accent-orange); width: 20px;"></i> ESD Safety & Anti-Static Workstation Trained</span>
+                        <span style="color: var(--text-primary);"><i class="fas fa-certificate" style="color: var(--accent-orange); width: 20px;"></i> Continuous OEM Training Programs</span>
+                    </div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top:auto;"><i class="fas fa-users"></i> 10+ certified technicians across all service center locations.</p>
+                </div>
+
+                <!-- Card: Turnaround Time Commitment -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid var(--accent-orange); display: flex; flex-direction: column; gap: 15px; height:100%;">
+                    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 5px;">
+                        <div style="font-size: 34px; color: var(--accent-orange); width: 54px; height: 54px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-stopwatch"></i></div>
+                        <div>
+                            <h3 style="font-size: 19px; margin-bottom: 4px;">Repair Turnaround Time</h3>
+                            <p style="font-size: 12px; color: var(--color-accent-green); font-weight: 700;"><i class="fas fa-circle-check"></i> 91.2% Completed Under 30 Min</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">We know a broken device disrupts your day. That is why 9 out of 10 common repairs are completed in under 30 minutes — often while you wait at our counter or browse nearby stores.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; background: rgba(255,85,0,0.04); border-radius: var(--radius-sm); padding: 15px; border: 1px solid var(--border-glass);">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-primary);">Screen Replacement</span>
+                            <span style="font-weight: 700; color: var(--color-accent-green);">20 Min</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-primary);">Battery Replacement</span>
+                            <span style="font-weight: 700; color: var(--color-accent-green);">15 Min</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-primary);">Charging Port Repair</span>
+                            <span style="font-weight: 700; color: var(--accent-orange);">25 Min</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-primary);">Camera / Speaker Repair</span>
+                            <span style="font-weight: 700; color: var(--accent-orange);">20-30 Min</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="color: var(--text-primary);">Motherboard / Water Damage</span>
+                            <span style="font-weight: 700; color: #ffaa00;">1-3 Days</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top:auto;"><i class="fas fa-clock"></i> Most walk-in repairs completed same day. No appointment necessary.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Timeline Section -->
+    <section class="section-padding timeline-section"
+        style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Workflow</p>
+                <h2>Our Repair <span class="glow-text">Process</span></h2>
+                <div class="subtitle">We value your time. See how our seamless repair pipeline gets your device back in
+                    shape faster than ever.</div>
+            </div>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item left scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">01</div>
+                        <h3>Device Checkup</h3>
+                        <p>Bring your device to our service center or schedule an appointment online. We welcome walk-ins daily.
+                        </p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="timeline-item right scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">02</div>
+                        <h3>Instant Diagnosis</h3>
+                        <p>Our experts run a comprehensive diagnostics check to isolate the fault and outline the repair
+                            scope.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="timeline-item left scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">03</div>
+                        <h3>Premium Repair</h3>
+                        <p>Our technicians complete repairs using state-of-the-art tools and original-grade OEM
+                            components.</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="timeline-item right scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">04</div>
+                        <h3>Rigorous Testing</h3>
+                        <p>We perform multi-point diagnostic checks post-repair to verify display responsiveness,
+                            battery flow, and sensors.</p>
+                    </div>
+                </div>
+                <!-- Step 5 -->
+                <div class="timeline-item left scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">05</div>
+                        <h3>Express Delivery</h3>
+                        <p>Get your device back along with a lifetime parts warranty statement and customized care
+                            advice.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Client Reviews</p>
+                <h2>What People <span class="glow-text">Say About Us</span></h2>
+                <div class="subtitle">We hold our reputation to the highest standard. Read verified reviews from our
+                    happy customers.</div>
+            </div>
+
+            <!-- Ratings Dashboard -->
+            <div class="glass-card testimonials-dashboard scroll-animate" style="margin-bottom: 50px;">
+                <div class="rating-summary">
+                    <div
+                        style="font-size:13px; text-transform:uppercase; color:var(--text-secondary); font-weight:700;">
+                        Overall Rating</div>
+                    <div class="big-rating">4.8</div>
+                    <div style="color: #ffaa00; font-size: 20px; margin-bottom: 8px;">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div style="color: var(--text-muted); font-size: 12px;">Based on 1,420 customer reviews</div>
+                </div>
+
+                <div class="rating-bar-chart">
+                    <!-- 5 Star -->
+                    <div class="rating-bar-row">
+                        <span style="width: 50px;">5 Stars</span>
+                        <div class="rating-bar">
+                            <div class="rating-bar-fill" style="width: 82%;"></div>
+                        </div>
+                        <span style="width: 40px; text-align: right;">82%</span>
+                    </div>
+                    <!-- 4 Star -->
+                    <div class="rating-bar-row">
+                        <span style="width: 50px;">4 Stars</span>
+                        <div class="rating-bar">
+                            <div class="rating-bar-fill" style="width: 12%;"></div>
+                        </div>
+                        <span style="width: 40px; text-align: right;">12%</span>
+                    </div>
+                    <!-- 3 Star -->
+                    <div class="rating-bar-row">
+                        <span style="width: 50px;">3 Stars</span>
+                        <div class="rating-bar">
+                            <div class="rating-bar-fill" style="width: 4%;"></div>
+                        </div>
+                        <span style="width: 40px; text-align: right;">4%</span>
+                    </div>
+                    <!-- 2 Star -->
+                    <div class="rating-bar-row">
+                        <span style="width: 50px;">2 Stars</span>
+                        <div class="rating-bar">
+                            <div class="rating-bar-fill" style="width: 1%;"></div>
+                        </div>
+                        <span style="width: 40px; text-align: right;">1%</span>
+                    </div>
+                    <!-- 1 Star -->
+                    <div class="rating-bar-row">
+                        <span style="width: 50px;">1 Star</span>
+                        <div class="rating-bar">
+                            <div class="rating-bar-fill" style="width: 1%;"></div>
+                        </div>
+                        <span style="width: 40px; text-align: right;">1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial Slider / Carousel -->
+            <div class="slider-container scroll-animate">
+                <div class="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card"
+                            style="border-color: var(--border-glow); box-shadow: 0 0 15px rgba(255, 85, 0, 0.15);">
+                            <div class="slide-quote">"Shattered my iPhone screen during my lunch break. FixPoint
+                                repaired it in 15 minutes flat while I waited. Touch sensitivity is perfect and screen
+                                is bright. Lifetime warranty is a huge peace of mind!"</div>
+                            <div class="slide-author">
+                                <div class="author-img"
+                                    style="background:#ff5500; color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:16px;">
+                                    DK</div>
+                                <div class="author-name">
+                                    <h4>Daniel K.</h4>
+                                    <p>iOS App Developer</p>
+                                </div>
+                                <div style="margin-left: auto;color:#ffaa00;"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card"
+                            style="border-color: var(--border-glow); box-shadow: 0 0 15px rgba(255, 85, 0, 0.15);">
+                            <div class="slide-quote">"Brought my iPad Pro here after the charger port got bent. The
+                                technician Alex Mercer showed me the micro-solder fault under his scope. Absolutely
+                                professional and transparent work."</div>
+                            <div class="slide-author">
+                                <div class="author-img"
+                                    style="background:#ffaa00; color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:16px;">
+                                    AS</div>
+                                <div class="author-name">
+                                    <h4>Amanda S.</h4>
+                                    <p>Digital Freelance Illustrator</p>
+                                </div>
+                                <div style="margin-left: auto; color:#ffaa00;"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card"
+                            style="border-color: var(--border-glow); box-shadow: 0 0 15px rgba(255, 85, 0, 0.15);">
+                            <div class="slide-quote">"Sold my old Galaxy S22 phone at their trade-in calculator price.
+                                Received instant store credit and bought a certified pre-owned S23. Highly recommend
+                                this service center!"</div>
+                            <div class="slide-author">
+                                <div class="author-img"
+                                    style="background:#ff7722; color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:16px;">
+                                    RG</div>
+                                <div class="author-name">
+                                    <h4>Raymond G.</h4>
+                                    <p>Corporate Product Manager</p>
+                                </div>
+                                <div style="margin-left: auto; color:#ffaa00;"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider Controls -->
+                <div class="slider-controls" style="margin-top: 30px;">
+                    <!-- Dots generated dynamically via JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warranty Information Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Peace of Mind</p>
+                <h2>Our Warranty <span class="glow-text">Coverage</span></h2>
+                <div class="subtitle">Every repair comes with comprehensive warranty protection. We stand behind our work so you can rest easy.</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;" class="scroll-animate">
+                <!-- Tier 1 -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid #00ff66; display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="font-size: 32px; color: #00ff66;"><i class="fas fa-crown"></i></div>
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">Lifetime Parts & Labor</h3>
+                            <p style="font-size: 12px; color: #00ff66; font-weight: 700;">Screen & Battery Repairs</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">If your replacement screen develops dead pixels, touch accuracy degrades, or the battery fails to hold charge, we replace it free of charge — no questions asked, for the lifetime of your device.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted);">
+                        <span><i class="fas fa-check-circle" style="color: #00ff66;"></i> No hidden fees</span>
+                        <span><i class="fas fa-check-circle" style="color: #00ff66;"></i> Transferable</span>
+                        <span><i class="fas fa-check-circle" style="color: #00ff66;"></i> Includes labor</span>
+                    </div>
+                </div>
+                <!-- Tier 2 -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid var(--accent-orange); display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="font-size: 32px; color: var(--accent-orange);"><i class="fas fa-shield-halved"></i></div>
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">1-Year Protection</h3>
+                            <p style="font-size: 12px; color: var(--accent-orange); font-weight: 700;">Ports, Cameras & Speakers</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Charging ports, camera modules, and speaker assemblies are covered by a 1-year warranty. If the repair fails due to parts defect or workmanship, we fix it at no cost.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted);">
+                        <span><i class="fas fa-check-circle" style="color: var(--accent-orange);"></i> Parts & labor</span>
+                        <span><i class="fas fa-check-circle" style="color: var(--accent-orange);"></i> No diagnostic fee</span>
+                        <span><i class="fas fa-check-circle" style="color: var(--accent-orange);"></i> Fast turnaround</span>
+                    </div>
+                </div>
+                <!-- Tier 3 -->
+                <div class="glass-card" style="padding: 35px 30px; border-top: 3px solid #ffaa00; display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="font-size: 32px; color: #ffaa00;"><i class="fas fa-flask"></i></div>
+                        <div>
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">90-Day Lab Coverage</h3>
+                            <p style="font-size: 12px; color: #ffaa00; font-weight: 700;">Motherboard & Micro-Soldering</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">Complex logic board repairs, IC chip replacements, and micro-soldering work include 90-day coverage. If the same fault reoccurs, we re-diagnose and re-repair at no charge.</p>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted);">
+                        <span><i class="fas fa-check-circle" style="color: #ffaa00;"></i> Re-diagnostics included</span>
+                        <span><i class="fas fa-check-circle" style="color: #ffaa00;"></i> Microscope verified</span>
+                        <span><i class="fas fa-check-circle" style="color: #ffaa00;"></i> Data preserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Protection Guarantees -->
+    <section class="section-padding"
+        style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Your Device Is Safe With Us</p>
+                <h2>Device Protection <span class="glow-text">Guarantees</span></h2>
+                <div class="subtitle">We treat every device like our own. Here is how we ensure your phone or tablet is protected throughout the repair process.</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px;" class="scroll-animate">
+                <!-- Guarantee 1 -->
+                <div class="glass-card" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; height:100%;">
+                    <div style="font-size: 38px; color: var(--accent-orange);"><i class="fas fa-user-shield"></i></div>
+                    <h3 style="font-size: 17px;">Data Privacy Promise</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">We never access, reset, or expose your personal data. Your photos, messages, and accounts remain completely private throughout the repair.</p>
+                    <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 700; margin-top:auto;"><i class="fas fa-lock"></i> 100% Confidential</span>
+                </div>
+                <!-- Guarantee 2 -->
+                <div class="glass-card" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; height:100%;">
+                    <div style="font-size: 38px; color: var(--accent-orange);"><i class="fas fa-certificate"></i></div>
+                    <h3 style="font-size: 17px;">Original-Grade Parts</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">We use only premium OEM-spec components. Every display, battery, and flex cable is tested for color accuracy, capacity, and durability before installation.</p>
+                    <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 700; margin-top:auto;"><i class="fas fa-circle-check"></i> Quality Verified</span>
+                </div>
+                <!-- Guarantee 3 -->
+                <div class="glass-card" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; height:100%;">
+                    <div style="font-size: 38px; color: var(--accent-orange);"><i class="fas fa-clock"></i></div>
+                    <h3 style="font-size: 17px;">Express Turnaround</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">90% of common repairs are completed in under 30 minutes. We value your time — wait at our counter or browse the mall while we work.</p>
+                    <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 700; margin-top:auto;"><i class="fas fa-bolt"></i> 20-Min Average</span>
+                </div>
+                <!-- Guarantee 4 -->
+                <div class="glass-card" style="padding: 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; height:100%;">
+                    <div style="font-size: 38px; color: var(--accent-orange);"><i class="fas fa-eye"></i></div>
+                    <h3 style="font-size: 17px;">Transparent Bench</h3>
+                    <p style="color: var(--text-secondary); font-size: 13.5px; line-height: 1.5;">Watch your repair in real time at our glass counter bench. Full diagnostics visibility — no hidden workshop, no surprises.</p>
+                    <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 700; margin-top:auto;"><i class="fas fa-glass-cheers"></i> Open View</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Common Questions</p>
+                <h2>Frequently Asked <span class="glow-text">Questions</span></h2>
+                <div class="subtitle">Quick answers to common questions about our repairs, parts, warranties, and
+                    data safety.</div>
+            </div>
+
+            <div class="accordion-container scroll-animate">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How long does a typical repair take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Most common repairs like screen and battery replacements take around 15 to 30 minutes. You
+                            can wait at our service center counter, grab a drink, or browse nearby stores while we finish.</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Do you offer a warranty on repairs?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes! We offer a lifetime warranty on parts and labor for screen and battery replacements. If
+                            touch accuracy degrades, simply visit our service center for a free replacement.</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Will I lose my data during the repair?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>No. We do not access or reset your personal data during screen, port, or battery repairs.
+                            However, we advise creating a backup prior to the repair for hardware safety.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Do you use original components?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We use original grade premium components (OEM specifications) which undergo strict quality
+                            testing to ensure identical color profile, refresh speed, and touch sensitivity.</p>
+                    </div>
+                </div>
+                <!-- Item 5: NEW - Genuine Parts -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Are your replacement parts genuine or aftermarket?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We use only premium OEM-grade components sourced from certified supply chains — never cheap aftermarket knockoffs. Every display is tested for color accuracy and touch response, every battery for true mAh capacity, and every flex cable for signal integrity before installation. Our parts carry a full warranty against defects.</p>
+                    </div>
+                </div>
+                <!-- Item 6: NEW - Certified Technicians -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Are your technicians certified and trained?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Absolutely. Every FixPoint technician holds industry-recognized IPC-7711/7721 SMD rework certification and Level-3 logic board diagnostics credentials. Our team averages 8+ years of hands-on experience and undergoes continuous OEM training to stay current with the latest device architectures, including Apple, Samsung, and Google Pixel platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearest Service Centers Section -->
+    <section class="section-padding"
+        style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Find Us</p>
+                <h2>Nearest Service <span class="glow-text">Centers</span></h2>
+                <div class="subtitle">Visit any of our conveniently located centers for fast, walk-in repairs. No appointment needed for most services.</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;" class="scroll-animate">
+                <!-- Location 1 -->
+                <div class="glass-card" style="padding: 25px; display: flex; flex-direction: column; gap: 15px; border-top: 3px solid var(--accent-orange); height:100%;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="font-size: 28px; color: var(--accent-orange); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-map-pin"></i></div>
+                        <div>
+                            <h3 style="font-size: 16px; margin-bottom: 3px;">West Galleria</h3>
+                            <p style="font-size: 12px; color: var(--text-muted);">Service Center #4</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">Ground floor, opposite Starbucks entrance. Walk-ins welcome daily. Free 15-minute parking validation.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                        <span><i class="fas fa-clock" style="color: var(--accent-orange);"></i> Mon-Sat 9AM-7PM</span>
+                        <span><i class="fas fa-phone" style="color: var(--accent-orange);"></i> +1 (555) 492-8822</span>
+                    </div>
+                    <a href="contact.html" style="font-size: 13px; color: var(--accent-orange); font-weight: 600; margin-top:auto;">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Location 2 -->
+                <div class="glass-card" style="padding: 25px; display: flex; flex-direction: column; gap: 15px; border-top: 3px solid var(--accent-orange); height:100%;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="font-size: 28px; color: var(--accent-orange); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-map-pin"></i></div>
+                        <div>
+                            <h3 style="font-size: 16px; margin-bottom: 3px;">Downtown Tech Hub</h3>
+                            <p style="font-size: 12px; color: var(--text-muted);">Service Center #2</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">42 Madison Avenue, Suite 110. Inside the Tech Hub lobby. Express drop-off kiosk available 24/7.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                        <span><i class="fas fa-clock" style="color: var(--accent-orange);"></i> Mon-Fri 8AM-8PM</span>
+                        <span><i class="fas fa-phone" style="color: var(--accent-orange);"></i> +1 (555) 291-7743</span>
+                    </div>
+                    <a href="contact.html" style="font-size: 13px; color: var(--accent-orange); font-weight: 600; margin-top:auto;">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- Location 3 -->
+                <div class="glass-card" style="padding: 25px; display: flex; flex-direction: column; gap: 15px; border-top: 3px solid var(--accent-orange); height:100%;">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="font-size: 28px; color: var(--accent-orange); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; background: var(--accent-orange-dim); border-radius: var(--radius-sm);"><i class="fas fa-map-pin"></i></div>
+                        <div>
+                            <h3 style="font-size: 16px; margin-bottom: 3px;">Eastside Mall</h3>
+                            <p style="font-size: 12px; color: var(--text-muted);">Service Center #7</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">Upper level near the food court. Mail-in repair drop-off accepted. Device pickup available until 7 PM daily.</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-glass); padding-top: 12px;">
+                        <span><i class="fas fa-clock" style="color: var(--accent-orange);"></i> Mon-Sat 10AM-7PM</span>
+                        <span><i class="fas fa-phone" style="color: var(--accent-orange);"></i> +1 (555) 837-2219</span>
+                    </div>
+                    <a href="contact.html" style="font-size: 13px; color: var(--accent-orange); font-weight: 600; margin-top:auto;">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;" class="scroll-animate">
+                <a href="contact.html" class="btn btn-secondary"><i class="fas fa-location-dot"></i> View All Locations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo"
+                        style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo"
+                            style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core
+                        pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required
+                            aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script File -->
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

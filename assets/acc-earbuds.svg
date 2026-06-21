@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1a24"/><stop offset="100%" stop-color="#0d0d14"/></linearGradient>
+    <radialGradient id="budGrad" cx="0.5" cy="0.5" r="0.5"><stop offset="0%" stop-color="#2a2a3a"/><stop offset="100%" stop-color="#14141e"/></radialGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg4)" rx="16"/>
+  <rect x="80" y="55" width="95" height="160" rx="40" fill="#1e1e2e" stroke="rgba(255,85,0,0.2)" stroke-width="1.5"/>
+  <rect x="225" y="55" width="95" height="160" rx="40" fill="#1e1e2e" stroke="rgba(255,85,0,0.2)" stroke-width="1.5"/>
+  <rect x="90" y="65" width="75" height="130" rx="30" fill="url(#budGrad)" stroke="rgba(255,85,0,0.1)" stroke-width="1"/>
+  <rect x="235" y="65" width="75" height="130" rx="30" fill="url(#budGrad)" stroke="rgba(255,85,0,0.1)" stroke-width="1"/>
+  <ellipse cx="127" cy="160" rx="25" ry="12" fill="rgba(255,85,0,0.08)" stroke="rgba(255,85,0,0.15)" stroke-width="1"/>
+  <ellipse cx="272" cy="160" rx="25" ry="12" fill="rgba(255,85,0,0.08)" stroke="rgba(255,85,0,0.15)" stroke-width="1"/>
+  <circle cx="127" cy="130" r="8" fill="rgba(255,85,0,0.15)"/>
+  <circle cx="272" cy="130" r="8" fill="rgba(255,85,0,0.15)"/>
+  <rect x="170" y="130" width="60" height="8" rx="4" fill="rgba(255,85,0,0.15)"/>
+  <path d="M105 60 Q127 30 150 60" stroke="rgba(255,85,0,0.15)" stroke-width="1.5" fill="none"/>
+  <path d="M250 60 Q272 30 295 60" stroke="rgba(255,85,0,0.15)" stroke-width="1.5" fill="none"/>
+  <circle cx="127" cy="120" r="3" fill="rgba(255,85,0,0.5)"/>
+  <circle cx="272" cy="120" r="3" fill="rgba(255,85,0,0.5)"/>
+  <rect x="100" y="220" width="60" height="5" rx="2" fill="rgba(255,85,0,0.08)"/>
+  <rect x="240" y="220" width="60" height="5" rx="2" fill="rgba(255,85,0,0.08)"/>
+</svg>

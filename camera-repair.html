@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Repair | FixPoint Service Center</title>
+    <meta name="description" content="Professional phone camera repair. Fix blurry photos, black screen, camera shake, and OIS failure. Rear and front camera replacement. 30-min service.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="camera-repair.html" class="active">Camera</a></li>
+                    <li><a href="repairs.html">Estimator</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="camera-repair.html" class="active">Camera Repair</a></li>
+            <li><a href="repairs.html">Estimator</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <section class="section-padding hero-banner" style="padding-top: 140px; padding-bottom: 50px; background-image: radial-gradient(circle at 60% 70%, rgba(255,0,85,0.06) 0%, transparent 60%);">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-tools banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div class="scroll-animate animated">
+                    <span style="font-size: 12px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; letter-spacing: 0.1em; background: var(--accent-orange-dim); padding: 5px 12px; border-radius: var(--radius-full);"><i class="fas fa-camera"></i> Optics</span>
+                    <h1 style="font-size: 44px; margin: 20px 0 15px; line-height: 1.1;">Camera <span class="glow-text">Repair</span></h1>
+                    <p style="color: var(--text-secondary); font-size: 16px; line-height: 1.6; margin-bottom: 20px;">Blurry photos, black viewfinder, OIS rattling, or cracked lens? We replace faulty camera modules, restore optical image stabilization, and recalibrate autofocus — in about 30 minutes.</p>
+                    <div style="display: flex; gap: 25px; margin-bottom: 25px;">
+                        <div><span style="font-size: 12px; color: var(--text-muted);">Starting From</span><p style="font-size: 28px; font-weight: 800; font-family: var(--font-heading); color: var(--text-primary);">$69</p></div>
+                        <div><span style="font-size: 12px; color: var(--text-muted);">Turnaround</span><p style="font-size: 28px; font-weight: 800; font-family: var(--font-heading); color: #00ff66;">30 Min</p></div>
+                        <div><span style="font-size: 12px; color: var(--text-muted);">Warranty</span><p style="font-size: 28px; font-weight: 800; font-family: var(--font-heading); color: var(--accent-orange);">Lifetime</p></div>
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="booking.html" class="btn btn-primary" style="padding: 14px 28px;"><i class="fas fa-calendar-check"></i> Book Express Repair</a>
+                        <a href="repairs.html" class="btn btn-secondary" style="padding: 14px 28px;"><i class="fas fa-calculator"></i> Get Estimate</a>
+                    </div>
+                </div>
+                <div class="scroll-animate animated" style="text-align: center;">
+                    <img src="assets/repair-scene.svg" alt="Camera repair illustration" style="max-height: 300px; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center;">
+                <div class="scroll-animate">
+                    <p style="color: var(--accent-orange); text-transform: uppercase; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 10px;">What We Do</p>
+                    <h2 style="font-size: 36px; margin-bottom: 20px;">Camera Module <span class="glow-text">Replacement & Calibration</span></h2>
+                    <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.7; margin-bottom: 15px;">Modern phone cameras are精密 assemblies combining a lens stack, image sensor, OIS voice-coil motor, and flex cable — any of which can fail. We diagnose the exact cause (software vs. hardware) and repair or replace the affected camera module.</p>
+                    <p style="color: var(--text-secondary); font-size: 15px; line-height: 1.7;">After installation, we calibrate autofocus, verify OIS response across the full range of motion, check for imaging artifacts, and ensure all lenses (wide, ultra-wide, telephoto) function correctly.</p>
+                </div>
+                <div class="scroll-animate">
+                    <div class="glass-card" style="padding: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 15px;">Symptoms We Fix</h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px;">
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> Black / blank camera viewfinder</span>
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> OIS rattling / vibrating noise</span>
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> Blurry or out-of-focus photos</span>
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> Cracked lens cover glass</span>
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> Camera app crashes on launch</span>
+                            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px;"><i class="fas fa-times-circle" style="color: #ff4444;"></i> Flash not working / uneven lighting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>How It Works</p>
+                <h2>Camera Repair <span class="glow-text">Process</span></h2>
+                <div class="subtitle">Diagnose, repair, calibrate, and certify.</div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">01</div>
+                        <h3>Software & Hardware Diagnostics</h3>
+                        <p>We test each camera sensor individually, check OIS response across axis, and inspect the lens assembly under magnification for cracks, dust ingress, or moisture damage.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">02</div>
+                        <h3>Camera Module Replacement</h3>
+                        <p>Failed camera modules are carefully desoldered or unseated from the motherboard. A new OEM-grade module is installed with proper EMI shielding and thermal interface material.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">03</div>
+                        <h3>Calibration & Alignment</h3>
+                        <p>We run calibration routines for autofocus range, OIS travel limits, white balance reference, and sensor gain mapping. A multi-distance focus chart is used to verify sharpness.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right scroll-animate">
+                    <div class="glass-card timeline-card">
+                        <div class="timeline-number">04</div>
+                        <h3>Image Quality Certification</h3>
+                        <p>Test photos are taken in varying lighting conditions to check for focus accuracy, exposure consistency, color uniformity across lenses, and OIS effectiveness during hand shake.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Transparent Pricing</p>
+                <h2>Camera Repair <span class="glow-text">Prices</span></h2>
+                <div class="subtitle">Includes diagnostic, module replacement, calibration, and lifetime warranty.</div>
+            </div>
+            <div class="scroll-animate" style="max-width: 700px; margin: 0 auto;">
+                <div class="glass-card" style="padding: 0; overflow: hidden;">
+                    <div style="display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0; font-size: 13px;">
+                        <div style="padding: 15px 20px; background: rgba(255,85,0,0.05); font-weight: 700; color: var(--accent-orange);">Service</div>
+                        <div style="padding: 15px 20px; background: rgba(255,85,0,0.05); font-weight: 700; color: var(--text-primary); text-align: center;">Price</div>
+                        <div style="padding: 15px 20px; background: rgba(255,85,0,0.05); font-weight: 700; color: var(--text-primary); text-align: center;">Book</div>
+
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass);">Rear Camera Replacement (iPhone)</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; font-weight: 700;">$79</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center;"><a href="booking.html" style="color: var(--accent-orange); font-weight: 600;">Book <i class="fas fa-arrow-right"></i></a></div>
+
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); background: rgba(255,85,0,0.02);">Front Camera Replacement</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; font-weight: 700; background: rgba(255,85,0,0.02);">$69</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; background: rgba(255,85,0,0.02);"><a href="booking.html" style="color: var(--accent-orange); font-weight: 600;">Book <i class="fas fa-arrow-right"></i></a></div>
+
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass);">Samsung Galaxy Rear Camera</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; font-weight: 700;">$89</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center;"><a href="booking.html" style="color: var(--accent-orange); font-weight: 600;">Book <i class="fas fa-arrow-right"></i></a></div>
+
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); background: rgba(255,85,0,0.02);">Google Pixel Rear Camera</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; font-weight: 700; background: rgba(255,85,0,0.02);">$79</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; background: rgba(255,85,0,0.02);"><a href="booking.html" style="color: var(--accent-orange); font-weight: 600;">Book <i class="fas fa-arrow-right"></i></a></div>
+
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass);">Lens Cover Glass Only</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center; font-weight: 700;">$29</div>
+                        <div style="padding: 12px 20px; border-top: 1px solid var(--border-glass); text-align: center;"><a href="booking.html" style="color: var(--accent-orange); font-weight: 600;">Book <i class="fas fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+                <p style="text-align: center; color: var(--text-muted); font-size: 12px; margin-top: 15px;">Prices are for most popular models. Ultra / telephoto modules may have additional cost.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Common Questions</p>
+                <h2>Camera Repair <span class="glow-text">FAQs</span></h2>
+            </div>
+            <div class="accordion-container scroll-animate" style="max-width: 700px; margin: 0 auto;">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>My camera shows a black screen — is it hardware or software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>A black viewfinder is usually a hardware issue with the camera module or its flex connection. We run a full diagnostic to rule out software causes (which are rare) before any repair work begins.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is OIS and can it be repaired?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Optical Image Stabilization uses tiny voice-coil motors to shift the lens and counter hand shake. If the OIS is stuck, rattling, or making noise, the camera module typically needs replacement. We recalibrate the new module's OIS range during installation.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Will camera repair affect Face ID?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Face ID on iPhones uses the TrueDepth camera system (infrared projector, flood illuminator, and dot projector). Rear camera replacement does not affect Face ID. Front camera replacement may affect it on some models — we will advise you before proceeding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Also Available</p>
+                <h2>Related <span class="glow-text">Services</span></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;" class="scroll-animate">
+                <a href="screen-repair.html" class="glass-card" style="padding: 25px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <div style="font-size: 28px; color: var(--accent-orange);"><i class="fas fa-mobile-alt"></i></div>
+                    <h4 style="color: var(--text-primary);">Screen Replacement</h4>
+                    <p style="color: var(--text-secondary); font-size: 13px;">From $89 • 20 Mins</p>
+                </a>
+                <a href="battery-replacement.html" class="glass-card" style="padding: 25px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <div style="font-size: 28px; color: var(--accent-orange);"><i class="fas fa-battery-three-quarters"></i></div>
+                    <h4 style="color: var(--text-primary);">Battery Replacement</h4>
+                    <p style="color: var(--text-secondary); font-size: 13px;">From $49 • 15 Mins</p>
+                </a>
+                <a href="charging-port-repair.html" class="glass-card" style="padding: 25px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <div style="font-size: 28px; color: var(--accent-orange);"><i class="fas fa-plug"></i></div>
+                    <h4 style="color: var(--text-primary);">Charging Port Repair</h4>
+                    <p style="color: var(--text-secondary); font-size: 13px;">From $59 • 25 Mins</p>
+                </a>
+                <a href="water-damage-repair.html" class="glass-card" style="padding: 25px; text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                    <div style="font-size: 28px; color: var(--accent-orange);"><i class="fas fa-tint"></i></div>
+                    <h4 style="color: var(--text-primary);">Water Damage Repair</h4>
+                    <p style="color: var(--text-secondary); font-size: 13px;">From $99 • 60 Mins</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding" style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="glass-card scroll-animate contact-preview-card" style="text-align: center; padding: 50px;">
+                <h2 style="font-size: 32px; margin-bottom: 15px;">Don't Miss a <span class="glow-text">Shot.</span></h2>
+                <p style="color: var(--text-secondary); font-size: 15px; max-width: 500px; margin: 0 auto 30px;">Book your camera repair and get back to capturing perfect photos in about 30 minutes.</p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="booking.html" class="btn btn-primary" style="padding: 14px 30px;"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+                    <a href="contact.html" class="btn btn-secondary" style="padding: 14px 30px;"><i class="fas fa-location-dot"></i> Find a Service Center</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Repair Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="screen-repair.html">Screen Replacement</a></li>
+                        <li><a href="battery-replacement.html">Battery Replacement</a></li>
+                        <li><a href="charging-port-repair.html">Charging Port Repair</a></li>
+                        <li><a href="camera-repair.html">Camera Repair</a></li>
+                        <li><a href="speaker-repair.html">Speaker Repair</a></li>
+                        <li><a href="services.html">Water Damage Repair</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FixPoint Service Center</title>
+    <meta name="description" content="Log in to your FixPoint account to manage bookings, view repair history, and track service status.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <section class="section-padding hero-banner" style="padding-top: 60px; padding-bottom: 80px; min-height: 100vh; display: flex; align-items: center; background-image: radial-gradient(circle at 30% 40%, rgba(255,85,0,0.05) 0%, transparent 60%);">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-user-lock banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div style="max-width: 440px; margin: 0 auto;">
+                <div class="scroll-animate animated">
+                    <div class="glass-card" style="padding: 40px 35px;">
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <a href="index.html" class="logo" style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: 20px; font-size: 22px;">
+                                <img src="assets/logo.png" alt="FixPoint Logo" style="height: 32px; width: auto; border-radius: 4px;">
+                                <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                            </a>
+                            <h2 style="font-size: 26px; margin-bottom: 6px;">Welcome Back</h2>
+                            <p style="color: var(--text-secondary); font-size: 13.5px;">Log in to manage your repairs and bookings.</p>
+                        </div>
+
+                        <form onsubmit="event.preventDefault(); alert('Login feature coming soon. This is a demo.');" style="display: flex; flex-direction: column; gap: 18px;">
+                            <div>
+                                <label for="login-email" style="font-size: 13px; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 6px;">Email Address</label>
+                                <input type="email" id="login-email" required placeholder="you@example.com" style="width: 100%; padding: 12px 16px; background: var(--bg-primary); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 14px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-orange)'" onblur="this.style.borderColor='var(--border-glass)'">
+                            </div>
+                            <div>
+                                <label for="login-password" style="font-size: 13px; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 6px;">Password</label>
+                                <div style="position: relative;">
+                                    <input type="password" id="login-password" required placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" style="width: 100%; padding: 12px 16px; background: var(--bg-primary); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 14px; outline: none; transition: border-color 0.2s; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-orange)'" onblur="this.style.borderColor='var(--border-glass)'">
+                                    <button type="button" class="pw-toggle" onclick="const inp=document.getElementById('login-password'); const icon=this.querySelector('i'); if(inp.type==='password'){inp.type='text';icon.className='fas fa-eye';}else{inp.type='password';icon.className='fas fa-eye-slash';}" style="position: absolute; inset-inline-end: 12px; top: 50%; transform: translateY(-50%); background: none; border: none; color: var(--text-muted); cursor: pointer; padding: 4px; font-size: 16px; line-height: 1;"><i class="fas fa-eye-slash"></i></button>
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px;">
+                                <label style="display: flex; align-items: center; gap: 6px; color: var(--text-secondary); cursor: pointer;">
+                                    <input type="checkbox" style="accent-color: var(--accent-orange);"> Remember me
+                                </label>
+                                <a href="#" style="color: var(--accent-orange);">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="padding: 14px; font-size: 14px; width: 100%;"><i class="fas fa-arrow-right-to-bracket"></i> Log In</button>
+                        </form>
+
+                        <div style="text-align: center; margin-top: 22px; font-size: 13.5px; color: var(--text-secondary);">
+                            Don't have an account? <a href="signup.html" style="color: var(--accent-orange); font-weight: 600;">Sign up</a>
+                        </div>
+
+                        <div style="margin-top: 25px; border-top: 1px solid var(--border-glass); padding-top: 22px;">
+                            <p style="font-size: 12px; color: var(--text-muted); text-align: center; margin-bottom: 14px;">Or continue with</p>
+                            <div style="display: flex; gap: 12px;">
+                                <button type="button" style="flex: 1; padding: 11px; background: var(--bg-primary); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent-orange)'" onmouseout="this.style.borderColor='var(--border-glass)'" onclick="alert('Google login coming soon.')"><i class="fab fa-google" style="color: var(--accent-orange);"></i> Google</button>
+                                <button type="button" style="flex: 1; padding: 11px; background: var(--bg-primary); border: 1px solid var(--border-glass); border-radius: var(--radius-sm); color: var(--text-primary); font-size: 13px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: border-color 0.2s;" onmouseover="this.style.borderColor='var(--accent-orange)'" onmouseout="this.style.borderColor='var(--border-glass)'" onclick="alert('Apple login coming soon.')"><i class="fab fa-apple" style="color: var(--accent-orange);"></i> Apple</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 30px 0; font-size: 12px; color: var(--text-muted);">
+        &copy; 2026 FixPoint. All rights reserved.
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

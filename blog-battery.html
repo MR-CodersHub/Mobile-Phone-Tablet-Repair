@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Secrets to Extending Refurbished Battery Health | FixPoint Blog</title>
+    <meta name="description" content="Learn the technical details of lithium battery degradation and 5 actionable ways to extend the health score of your refurbished smartphone.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Article Content Section -->
+    <main class="section-padding hero-banner" style="padding-top: 140px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-tools banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 25px; display: flex; gap: 8px; align-items: center;">
+                <a href="index.html" style="hover: color: var(--accent-orange);">Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px; color: var(--text-muted);"></i>
+                <a href="blog.html" style="hover: color: var(--accent-orange);">Blog</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px; color: var(--text-muted);"></i>
+                <span style="color: var(--text-primary); font-weight: 500;">Battery Secrets</span>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Article Header -->
+                <div style="margin-bottom: 40px;">
+                    <span style="font-size: 11px; font-weight: 700; color: var(--accent-orange); background: var(--accent-orange-dim); padding: 5px 12px; border-radius: var(--radius-full); text-transform: uppercase; letter-spacing: 0.05em;">Battery Care</span>
+                    <h1 style="font-size: 42px; margin-top: 15px; margin-bottom: 20px; line-height: 1.2;">5 Secrets to Extending Refurbished Battery Health</h1>
+                    
+                    <div style="display: flex; gap: 20px; align-items: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 20px; font-size: 13.5px; color: var(--text-secondary); flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-orange); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px;">AM</div>
+                            <span style="color: var(--text-primary); font-weight: 600;">Alex Mercer</span>
+                        </div>
+                        <div><i class="fas fa-calendar-days" style="margin-right: 6px;"></i> May 20, 2026</div>
+                        <div><i class="fas fa-clock" style="margin-right: 6px;"></i> 4 Min Read</div>
+                    </div>
+                </div>
+
+                <!-- Featured Image -->
+                <div class="glass-card" style="padding: 10px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 40px; text-align: center;">
+                    <img src="assets/accessories_showcase.png" alt="Smartphone Battery Charging" style="border-radius: var(--radius-sm); max-height: 380px; width: 100%; object-fit: contain; background: rgba(0,0,0,0.2);">
+                </div>
+
+                <!-- Article Body -->
+                <div style="line-height: 1.8; font-size: 16px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 24px;">
+                    <p>Lithium-ion batteries are modern chemical marvels, but they are subject to strict wear physics. When you purchase a certified refurbished smartphone from FixPoint, we guarantee a battery health score of <strong>85% or higher</strong>. However, how you charge and maintain your device during its first few months determines whether that score stays stable or degrades rapidly.</p>
+                    
+                    <p>To help you get the most longevity out of your device, our Lead Logic Board Specialist, Alex Mercer, has outlined the core chemical factors behind battery wear and shared 5 highly actionable charging habits to protect your cell.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">1. Avoid the Extreme Zones (The 20-80 Rule)</h2>
+                    <p>Lithium batteries suffer the most physical stress when they are at their extremes: fully depleted (0%) or fully saturated (100%). Inside the cell, high voltage at 100% creates elevated physical pressure on the cathode. Conversely, complete depletion can cause copper shunt formations that short-circuit the cells.</p>
+                    <p><strong>Actionable Tip:</strong> Keep your battery percentage fluctuating between <strong>20% and 80%</strong> as much as possible. Unplug your device once it hits 80%, and plug it in before it drops below 20% to cut the wear cycles in half.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">2. Heat is the Ultimate Killer</h2>
+                    <p>Thermal stress accelerates the chemical breakdown inside battery cells. High temperature causes the protective Solid Electrolyte Interphase (SEI) layer on the anode to dissolve, consuming active lithium and permanently reducing capacity.</p>
+                    <p><strong>Actionable Tip:</strong> Never charge your phone in direct sunlight, under a pillow, or while running demanding games. If your device feels hot to the touch during charge cycles, remove its protective case immediately to improve heat dissipation.</p>
+
+                    <!-- Key Takeaway Box -->
+                    <div class="glass-card" style="padding: 25px; border-left: 4px solid var(--accent-orange); margin: 15px 0;">
+                        <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-primary); font-weight: 700;"><i class="fas fa-circle-info" style="color:var(--accent-orange); margin-right:8px;"></i>Did You Know?</h4>
+                        <p style="font-size: 14.5px; line-height: 1.6; margin: 0;">Charging your phone overnight continuously holds the voltage at maximum capacity for hours. Modern operating systems mitigate this via smart charging algorithms (e.g. Optimized Battery Charging on iOS), but manually managing the unplug timing remains superior.</p>
+                    </div>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">3. Say No to Cheap Chargers</h2>
+                    <p>Uncertified gas-station chargers and cables lack voltage regulation hardware. Fluctuations in input current make the internal battery controller work harder, creating erratic heat spikes and degrading chemical layers.</p>
+                    <p><strong>Actionable Tip:</strong> Utilize certified power adapters matching Power Delivery (PD) or QuickCharge (QC) parameters. Look for GaN (Gallium Nitride) chargers, which provide high power output with minimal thermal release.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">4. Turn Off Fast Charging When Not Needed</h2>
+                    <p>Fast charging works by pumping high current into the cell during the first 50% cycle. While convenient, it causes elevated thermal activity and faster mechanical degradation of the internal electrodes.</p>
+                    <p><strong>Actionable Tip:</strong> If you are charging your phone overnight or while sitting at a desk, utilize a standard 5W/10W charger instead of a 30W+ fast brick. Slow, steady current is much gentler on the lithium cathode.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">5. Calibrate the Battery Gauge Periodically</h2>
+                    <p>Over time, the software fuel gauge that displays your percentage can drift out of sync with the physical charge states, leading to sudden shutdowns at 5% or rapid drains.</p>
+                    <p><strong>Actionable Tip:</strong> Once every three months, run a full calibration cycle: discharge the phone until it shuts down, charge it uninterrupted to 100%, and keep it plugged in for 2 extra hours. This recalibrates the battery controller thresholds.</p>
+                </div>
+
+                <!-- Author Card -->
+                <div class="glass-card" style="display: flex; gap: 20px; align-items: center; margin-top: 50px; padding: 30px; border-color: var(--border-glass); flex-wrap: wrap;">
+                    <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--accent-orange); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 24px; flex-shrink:0;">AM</div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <span style="font-size: 11px; text-transform: uppercase; color: var(--accent-orange); font-weight: 700;">Written By</span>
+                        <h4 style="font-size: 18px; margin: 4px 0;">Alex Mercer</h4>
+                        <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin: 0;">Alex Mercer is FixPoint's Lead Logic Board Specialist. With over 8 years in micro-soldering and circuitry repair, he oversees hardware diagnostics operations at our Galleria workshops.</p>
+                    </div>
+                </div>
+
+                <!-- Related Articles Section -->
+                <div style="margin-top: 80px; border-top: 1px solid var(--border-glass); padding-top: 50px;">
+                    <h3 style="font-size: 24px; font-family: var(--font-heading); margin-bottom: 30px; text-align: center;">Related Articles</h3>
+                    
+                    <div class="blog-grid" style="margin-top: 0;">
+                        <!-- Display Calibration -->
+                        <div class="glass-card blog-card">
+                            <div class="blog-card-image-wrap" style="height: 160px;">
+                                <span class="blog-card-badge" style="background:#ffaa00; box-shadow: 0 4px 10px rgba(255, 170, 0, 0.3);">Calibration</span>
+                                <img src="assets/tablet_repair.png" alt="Display Calibration">
+                            </div>
+                            <div class="blog-card-content" style="padding: 20px;">
+                                <div class="blog-card-meta" style="margin-bottom: 10px; padding-bottom: 8px;">
+                                    <span><i class="fas fa-clock"></i> 6 Min Read</span>
+                                    <span>May 15, 2026</span>
+                                </div>
+                                <h3 style="font-size: 17px; margin-bottom: 8px;">Why OEM Calibrations Matter for Replaced Displays</h3>
+                                <p style="font-size: 13px; line-height: 1.5; margin-bottom: 15px;">Discover how display touch serialization and 3D-touch profiles are restored post-repair.</p>
+                                <a href="blog-calibration.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Eco Tech -->
+                        <div class="glass-card blog-card">
+                            <div class="blog-card-image-wrap" style="height: 160px;">
+                                <span class="blog-card-badge" style="background:#00ff66; color:#060608; box-shadow: 0 4px 10px rgba(0, 255, 102, 0.3);">Sustainability</span>
+                                <img src="assets/hero_repair_mockup.png" alt="Eco Tech">
+                            </div>
+                            <div class="blog-card-content" style="padding: 20px;">
+                                <div class="blog-card-meta" style="margin-bottom: 10px; padding-bottom: 8px;">
+                                    <span><i class="fas fa-clock"></i> 5 Min Read</span>
+                                    <span>May 08, 2026</span>
+                                </div>
+                                <h3 style="font-size: 17px; margin-bottom: 8px;">Electronic Waste: The Power of Refurbished Tech</h3>
+                                <p style="font-size: 13px; line-height: 1.5; margin-bottom: 15px;">How purchasing pre-owned smartphones keeps electronics out of landfill waste.</p>
+                                <a href="blog-waste.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking CTA -->
+                <div class="glass-card scroll-animate animated" style="margin-top: 80px; padding: 40px; border-color: var(--border-glow); background: var(--bg-card-gradient); text-align: center;">
+                    <h3 style="font-size: 24px; font-family: var(--font-heading); margin-bottom: 10px;">Encountering Rapid Battery Drain?</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; max-width: 500px; margin: 0 auto 25px;">If your smartphone's battery health has dropped below 80% or is shutting down randomly, bring it to our service center counter for a certified 15-minute replacement.</p>
+                    <a href="booking.html" class="btn btn-primary">Book Battery Replacement</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

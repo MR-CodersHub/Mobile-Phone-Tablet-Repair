@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home2 - Certified Pre-Owned Marketplace & Repairs | FixPoint</title>
+    <meta name="description" content="Shop certified refurbished smartphones, tablets, and accessories. Experience 30-point diagnostics, 12-month warranty, and instant trade-in values.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html" class="active">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html" class="active">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero hero-enhanced scroll-animate animated" style="background-image: radial-gradient(circle at 10% 20%, rgba(255, 85, 0, 0.06) 0%, transparent 50%);">
+        <div class="hero-deco-ring hero-deco-ring-1"></div>
+        <div class="hero-deco-ring hero-deco-ring-2"></div>
+        <div class="hero-deco-ring hero-deco-ring-3"></div>
+        <div class="hero-deco-dot hero-deco-dot-1"></div>
+        <div class="hero-deco-dot hero-deco-dot-2"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span style="font-size: 13px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; letter-spacing: 0.15em; display: inline-block; margin-bottom: 15px; background: rgba(255,85,0,0.1); padding: 5px 12px; border-radius: var(--radius-full);">Certified Pre-Owned</span>
+                    <h1>Certified Refurbished.<br><span class="glow-text">Guaranteed Premium.</span></h1>
+                    <p>Get premium smartphones, tablets, and accessories at up to 40% off retail pricing. Every device undergoes a rigorous 30-point diagnostics review and is backed by a comprehensive 12-month hardware warranty.</p>
+                    <div class="hero-buttons">
+                        <a href="#marketplace" class="btn btn-primary"><i class="fas fa-shopping-bag"></i> Buy Devices</a>
+                        <a href="#trade-in" class="btn btn-secondary"><i class="fas fa-arrow-right-arrow-left"></i> Trade-In Now</a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="hero-glow-bg"></div>
+                    <div class="hero-showcase-container">
+                        <!-- Floating Accents -->
+                        <div class="floating-accent floating-accent-1"><i class="fas fa-wrench"></i></div>
+                        <div class="floating-accent floating-accent-2"><i class="fas fa-bolt"></i></div>
+                        <!-- Glassmorphism Hero Showcase Card -->
+                        <div class="hero-showcard">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="font-size: 11px; font-weight: 700; color: var(--color-accent-amber); background: rgba(255, 170, 0, 0.1); padding: 4px 10px; border-radius: var(--radius-full);"><i class="fas fa-medal"></i> Premium Condition</span>
+                                <span style="font-size: 11px; color: var(--color-accent-green); font-weight: 600;"><i class="fas fa-circle-check"></i> 30-Point Inspected</span>
+                            </div>
+                            <div class="hero-showcard-images">
+                                <div class="hero-showcard-img-wrap">
+                                    <img src="assets/tablet_repair.png" alt="Tablet Showcase">
+                                </div>
+                                <div class="hero-showcard-img-wrap">
+                                    <img src="assets/accessories_showcase.png" alt="Phone Showcase">
+                                </div>
+                            </div>
+                            <div style="border-top: 1px solid var(--border-glass); padding-top: 15px;">
+                                <h3 style="font-size: 16px; margin-bottom: 5px;">Unlocked Pro Models</h3>
+                                <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.4;">Fully unlocked multi-carrier devices with high battery health scores, available immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Statistics Strip -->
+    <section class="stat-strip">
+        <div class="container">
+            <div class="stat-strip-grid">
+                <div class="stat-strip-item">
+                    <h4>25,000+</h4>
+                    <p>Certified Devices Sold</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>99.8%</h4>
+                    <p>Customer Satisfaction</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>40,000+</h4>
+                    <p>Devices Repaired</p>
+                </div>
+                <div class="stat-strip-item">
+                    <h4>12-Month</h4>
+                    <p>Warranty Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Deals & Repair Combos -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Bundle & Save</p>
+                <h2>Repair + Device <span class="glow-text">Combo Offers</span></h2>
+                <div class="subtitle">Take advantage of our exclusive service center combinations. Purchase a pre-owned device and save big on repair options for your current hardware.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <!-- Combo 1 -->
+                <div class="glass-card scroll-animate" style="border-color: var(--border-glow); display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <span style="font-size: 10px; font-weight: 700; color: #ff5500; background: rgba(255, 85, 0, 0.15); padding: 4px 10px; border-radius: var(--radius-full); text-transform: uppercase;">Top Bundle</span>
+                            <span style="font-size: 12px; color: var(--color-accent-green); font-weight: 600;"><i class="fas fa-fire" style="margin-right: 5px;"></i> Active Offer</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 8px;">Ultimate Display Combo</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.5;">Replace any shattered screen module and receive a premium 9H screen protector + professional calibration for free.</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 20px; font-weight: 800; color: var(--text-primary);">Save $25.00</span>
+                        <a href="booking.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 12px; border-radius: var(--radius-sm);">Claim Deal</a>
+                    </div>
+                </div>
+
+                <!-- Combo 2 -->
+                <div class="glass-card scroll-animate" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <span style="font-size: 10px; font-weight: 700; color: var(--text-secondary); background: var(--bg-badge-neutral); padding: 4px 10px; border-radius: var(--radius-full); text-transform: uppercase;">Battery + Port</span>
+                            <span style="font-size: 12px; color: var(--color-accent-amber); font-weight: 600;"><i class="fas fa-hourglass-half" style="margin-right: 5px;"></i> Ending Soon</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 8px;">Power Revival Package</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.5;">Add a charging port deep-cleansing extraction and test calibration to any battery replacement swap for only $15 extra.</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 20px; font-weight: 800; color: var(--text-primary);">Save $15.00</span>
+                        <a href="booking.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 12px; border-radius: var(--radius-sm);">Claim Deal</a>
+                    </div>
+                </div>
+
+                <!-- Combo 3 -->
+                <div class="glass-card scroll-animate" style="display: flex; flex-direction: column; justify-content: space-between; min-height: 250px;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <span style="font-size: 10px; font-weight: 700; color: var(--text-secondary); background: var(--bg-badge-neutral); padding: 4px 10px; border-radius: var(--radius-full); text-transform: uppercase;">Family Pack</span>
+                            <span style="font-size: 12px; color: var(--text-muted); font-weight: 600;"><i class="fas fa-check" style="margin-right: 5px;"></i> Ongoing</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 8px;">Dual Device Service</h3>
+                        <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.5;">Bring two devices (phone, tablet, or accessory) at the same time and save 15% on total hardware labor charges.</p>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 15px; margin-top: 15px;">
+                        <span style="font-size: 20px; font-weight: 800; color: var(--text-primary);">15% Off Total</span>
+                        <a href="booking.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 12px; border-radius: var(--radius-sm);">Claim Deal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certified Quality Guarantee -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="quality-guarantee-grid">
+                <div class="scroll-animate">
+                    <p class="quality-guarantee-tag">Zero Compromises</p>
+                    <h2 class="quality-guarantee-title">Certified Quality <span class="glow-text">Guarantee</span></h2>
+                    <p class="quality-guarantee-desc">Each phone, tablet, and logic board repair is subjected to a rigorous 30-point diagnostics scan. We check everything from wireless signal load to sub-pixel accuracy, ensuring every pre-owned device works exactly like a brand-new model.</p>
+                    
+                    <div class="quality-guarantee-subgrid">
+                        <div class="quality-guarantee-item">
+                            <div class="check-icon-wrap"><i class="fas fa-check"></i></div>
+                            <span>85%+ Battery Guarantee</span>
+                        </div>
+                        <div class="quality-guarantee-item">
+                            <div class="check-icon-wrap"><i class="fas fa-check"></i></div>
+                            <span>Clean IMEI Guaranteed</span>
+                        </div>
+                        <div class="quality-guarantee-item">
+                            <div class="check-icon-wrap"><i class="fas fa-check"></i></div>
+                            <span>Original OEM Parts</span>
+                        </div>
+                        <div class="quality-guarantee-item">
+                            <div class="check-icon-wrap"><i class="fas fa-check"></i></div>
+                            <span>Rigorous Signal Testing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card scroll-animate quality-guarantee-card">
+                    <h3>Our 30-Point Inspection Process</h3>
+                    <div class="inspection-list">
+                        <div class="inspection-item">
+                            <span>Display, Touch & Digitizer accuracy</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                        <div class="inspection-item">
+                            <span>LTE, 5G, Wi-Fi & Bluetooth chips</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                        <div class="inspection-item">
+                            <span>Microphone & Audio speaker grids</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                        <div class="inspection-item">
+                            <span>Front & Rear camera modules + focus</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                        <div class="inspection-item">
+                            <span>Charging Port calibration & data lines</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                        <div class="inspection-item">
+                            <span>Hardware acceleration & Gyro sensors</span> <span class="inspection-status"><i class="fas fa-circle-check"></i> Verified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top:1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Our Core Values</p>
+                <h2>Why Choose <span class="glow-text">FixPoint</span></h2>
+                <div class="subtitle">We represent absolute transparency, expert work, and premium guarantees. Join thousands of happy marketplace customers.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <!-- 1 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-shield-halved"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">12-Month Warranty</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Every refurbished smartphone and tablet comes protected by our ironclad 1-year store warranty covering diagnostics.</p>
+                </div>
+                <!-- 2 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-clipboard-check"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">30-Point Inspection</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Our certified mobile technicians diagnose and check every product component before stocking it in the display cabinet.</p>
+                </div>
+                <!-- 3 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-microchip"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Genuine Parts Only</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">We prioritize OEM replacement components and highly calibrated modules to deliver factory-spec logic performance.</p>
+                </div>
+                <!-- 4 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-truck-fast"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Fast Free Delivery</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">We process all marketplace orders within 24 hours, shipping with protective tech cases and parcel tracking codes.</p>
+                </div>
+                <!-- 5 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-lock"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Secure Payments</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Our billing pipeline is protected by standard encrypted gateways, supporting credit card and direct mobile pay options.</p>
+                </div>
+                <!-- 6 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-user-gear"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Expert Technicians</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">FixPoint hires Level 3 hardware diagnostics personnel specializing in micro-soldering and custom tablet panel alignments.</p>
+                </div>
+                <!-- 7 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-tag"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Transparent Pricing</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">No hidden fees or surprise charges. Every repair and device listing includes an upfront, itemized cost breakdown before you commit.</p>
+                </div>
+                <!-- 8 -->
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-headset"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Customer-First Support</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Our dedicated support team is available via live chat, phone, or in-person walk-ins to assist you at every step of your repair journey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trade-In Section -->
+    <section class="section-padding" id="trade-in" style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="glass-card tradein-card scroll-animate">
+                <div class="tradein-header">
+                    <p class="tradein-tag">Instant Device Appraiser</p>
+                    <h2>Recycle Your Phone For <span class="glow-text">Instant Cash</span></h2>
+                    <p class="tradein-subtitle">Appraise the value of your device instantly. Lock in your quote online, then drop it off at our Galleria counter.</p>
+                </div>
+
+                <div class="tradein-grid">
+                    <!-- Appraiser Controls -->
+                    <div style="display: flex; flex-direction: column; gap: 20px; justify-content: center;">
+                        <div class="form-group">
+                            <label for="tradein-device">Select Device Model</label>
+                            <select id="tradein-device" class="select-custom" style="background: var(--bg-primary);">
+                                <option value="" disabled selected>Select model...</option>
+                                <option value="iphone15pro">iPhone 15 Pro Max</option>
+                                <option value="iphone14">iPhone 14 Pro</option>
+                                <option value="s24ultra">Galaxy S24 Ultra</option>
+                                <option value="s23">Galaxy S23+</option>
+                                <option value="pixel8pro">Google Pixel 8 Pro</option>
+                                <option value="ipadpro">iPad Pro 12.9"</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tradein-condition">Device Physical State</label>
+                            <select id="tradein-condition" class="select-custom" style="background: var(--bg-primary);">
+                                <option value="" disabled selected>Select wear level...</option>
+                                <option value="mint">Mint Condition (Flawless frame &amp; screen)</option>
+                                <option value="excellent">Excellent Condition (Barely visible micro-wear)</option>
+                                <option value="good">Good Condition (Light scratches, fully working)</option>
+                                <option value="fair">Fair Condition (Heavy wear, fully functional)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Digital Glowing Payout Screen -->
+                    <div class="tradein-output">
+                        <span class="tradein-label">Calculated Value</span>
+                        <div class="tradein-value" id="tradein-value-price">$0</div>
+                        <p class="tradein-note">Locked values are valid for 7 days at any Galleria service center branch.</p>
+                        <button onclick="alert('Trade-in quote generated. Show code #TRADE-891 at our service center counter.');" class="btn btn-primary tradein-btn">Lock in Offer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Buy Refurbished Devices Section -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Environmental & Value Perks</p>
+                <h2>Why Buy <span class="glow-text">Refurbished Tech</span></h2>
+                <div class="subtitle">Smart choices make sense for your wallet and the planet. See how buying pre-owned benefits everyone.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-wallet"></i></div>
+                    <h3 style="font-size:20px; margin-bottom:12px;">Massive Savings</h3>
+                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.6;">Save up to 40% compared to brand new device prices. Allocate your budget to premium storage models instead.</p>
+                </div>
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-leaf"></i></div>
+                    <h3 style="font-size:20px; margin-bottom:12px;">Eco-Friendly Impact</h3>
+                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.6;">Reduce electronic waste. Each refurbished smartphone prevents raw mineral extraction and carbon emissions.</p>
+                </div>
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-thumbs-up"></i></div>
+                    <h3 style="font-size:20px; margin-bottom:12px;">Zero Risk</h3>
+                    <p style="font-size:14px; color:var(--text-secondary); line-height:1.6;">Backed by our 12-month hardware warranty and 30-day money-back guarantee. No hidden anomalies allowed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Device Protection Plans -->
+    <section class="section-padding" style="background-color: var(--bg-primary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>FixPoint Care Shield</p>
+                <h2>Device Protection <span class="glow-text">Plans</span></h2>
+                <div class="subtitle">Extend your peace of mind with premium warranty layers covering screen fractures, spills, and accidental liquid drops.</div>
+            </div>
+
+            <div class="protection-grid scroll-animate">
+                <!-- Standard -->
+                <div class="glass-card protection-card">
+                    <h3>FixPoint Standard</h3>
+                    <p style="color:var(--text-secondary); font-size:13px;">Default protection with every sale</p>
+                    <div class="protection-price">$0 <span>/ year</span></div>
+                    <ul class="protection-features">
+                        <li>12-Month Hardware Defects</li>
+                        <li>Battery Health Guarantee (85%+)</li>
+                        <li>Overheating & Software errors</li>
+                        <li style="color:var(--text-muted); text-decoration:line-through; font-style:italic; padding-left:0px; list-style-type:none;">No accidental liquid cover</li>
+                    </ul>
+                    <a href="#marketplace" class="btn btn-secondary" style="width:100%; border-radius:var(--radius-sm);">Included Free</a>
+                </div>
+                <!-- Shield Care -->
+                <div class="glass-card protection-card" style="border-color:var(--border-glow); box-shadow: var(--shadow-glow);">
+                    <div style="position:absolute; top:12px; right:-25px; background:var(--accent-orange); color:white; font-size:9px; font-weight:700; padding:3px 25px; transform:rotate(45deg);">POPULAR</div>
+                    <h3>Shield Care Plus</h3>
+                    <p style="color:var(--text-secondary); font-size:13px;">Accidental physical protection</p>
+                    <div class="protection-price">$49 <span>/ year</span></div>
+                    <ul class="protection-features">
+                        <li>All Standard Features</li>
+                        <li>1x Free Screen Replacement</li>
+                        <li>Water Splash/Spill Diagnosis</li>
+                        <li>Free Diagnostics and Cleanup</li>
+                    </ul>
+                    <a href="booking.html?plan=shield" class="btn btn-primary" style="width:100%; border-radius:var(--radius-sm);">Get Shield Care</a>
+                </div>
+                <!-- Extreme Care -->
+                <div class="glass-card protection-card">
+                    <h3>Extreme Guard Lifetime</h3>
+                    <p style="color:var(--text-secondary); font-size:13px;">Complete ultimate protection</p>
+                    <div class="protection-price">$99 <span>/ year</span></div>
+                    <ul class="protection-features">
+                        <li>All Shield Care Features</li>
+                        <li>Unlimited Screen Replacements</li>
+                        <li>Full Battery swap at 80%</li>
+                        <li>Zero Deductible Diagnostics</li>
+                    </ul>
+                    <a href="booking.html?plan=lifetime" class="btn btn-secondary" style="width:100%; border-radius:var(--radius-sm);">Get Extreme Care</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Repair Support & Service Options -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);" id="repair-support">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Support Portal</p>
+                <h2>Repair Support & <span class="glow-text">Service Options</span></h2>
+                <div class="subtitle">Explore repair prices, troubleshoot common diagnostics, submit mail-in repair requests, or book a walk-in appointment directly.</div>
+            </div>
+
+            <!-- Subsection 1: Repair Price Guide -->
+            <div style="margin-bottom: 80px;" class="scroll-animate">
+                <div style="text-align: left; margin-bottom: 30px;">
+                    <span style="color:var(--accent-orange); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Interactive Guide</span>
+                    <h3 style="font-size:26px; margin-top:5px;">Repair Price Estimates</h3>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Screen Replacement -->
+                    <div class="price-card featured">
+                        <div class="price-card-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                        <h3>Screen Replacement</h3>
+                        <p>OEM quality display digitizer modules. Free 9H screen shield included.</p>
+                        <div class="price-card-amount">$89 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 30-45 Mins Turnaround</div>
+                        <a href="booking.html?service=screen" class="btn btn-primary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                    <!-- Battery Replacement -->
+                    <div class="price-card">
+                        <div class="price-card-icon"><i class="fas fa-battery-three-quarters"></i></div>
+                        <h3>Battery Replacement</h3>
+                        <p>Fully calibrated battery swap with zero cycle count and health restore.</p>
+                        <div class="price-card-amount">$49 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 20 Mins Turnaround</div>
+                        <a href="booking.html?service=battery" class="btn btn-secondary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                    <!-- Charging Port Repair -->
+                    <div class="price-card">
+                        <div class="price-card-icon"><i class="fas fa-plug"></i></div>
+                        <h3>Charging Port Repair</h3>
+                        <p>USB-C / Lightning port diagnostic cleanse or complete module replacement.</p>
+                        <div class="price-card-amount">$39 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 30 Mins Turnaround</div>
+                        <a href="booking.html?service=charging" class="btn btn-secondary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                    <!-- Camera Repair -->
+                    <div class="price-card">
+                        <div class="price-card-icon"><i class="fas fa-camera"></i></div>
+                        <h3>Camera Replacement</h3>
+                        <p>Rear or front lens sensor module correction, autofocus calibration check.</p>
+                        <div class="price-card-amount">$69 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 40 Mins Turnaround</div>
+                        <a href="booking.html?service=camera" class="btn btn-secondary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                    <!-- Software Fixes -->
+                    <div class="price-card">
+                        <div class="price-card-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>Software Restore</h3>
+                        <p>Factory reset, custom bootloop extraction, partition flashing, operating system lock recovery.</p>
+                        <div class="price-card-amount">$29 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 60 Mins Turnaround</div>
+                        <a href="booking.html?service=software" class="btn btn-secondary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                    <!-- Water Damage Repair -->
+                    <div class="price-card">
+                        <div class="price-card-icon"><i class="fas fa-droplet"></i></div>
+                        <h3>Water Damage Care</h3>
+                        <p>Ultrasonic board cleaning, motherboard corrosion removal, power line diagnosis.</p>
+                        <div class="price-card-amount">$79 <span>onwards</span></div>
+                        <div class="price-card-time"><i class="fas fa-clock"></i> 24 Hr Testing Window</div>
+                        <a href="booking.html?service=water" class="btn btn-secondary" style="border-radius: var(--radius-sm); font-size:13px; padding:10px 0; width:100%;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 2: Common Issue Diagnostics -->
+            <div style="margin-bottom: 80px;" class="scroll-animate">
+                <div style="text-align: left; margin-bottom: 30px;">
+                    <span style="color:var(--accent-orange); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Troubleshooting</span>
+                    <h3 style="font-size:26px; margin-top:5px;">Common Issue Diagnostics</h3>
+                </div>
+
+                <div class="diagnostic-container">
+                    <!-- Issue 1: Overheating -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-fire status-icon"></i>
+                                <span>Device Overheating Issues</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">If your device feels hot to the touch during simple tasks, it is usually caused by active background software loops, a degraded lithium battery running under elevated load resistance, or processor throttling from CPU load.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Battery Check / CPU diagnostics</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 20-30 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 2: Battery Drain -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-battery-empty status-icon"></i>
+                                <span>Rapid Battery Drain</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">Batteries naturally degrade after 500 charge cycles. If you see battery percentage dropping rapidly, our technicians can measure battery health and performance peaks. A physical battery replacement restores peak factory capacity instantly.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Battery Replacement</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 15-20 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 3: Black Screen -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-desktop status-icon"></i>
+                                <span>Black Screen of Death / Unresponsive Display</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">An unresponsive black screen can be triggered by a severed display ribbon flex connector (following drop impacts), back-light circuit failures on the board, or a deep software freeze requiring a hardware reset logic cycle.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Display Replacement / Digitizer reseat</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 30-40 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 4: Charging Failure -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-triangle-exclamation status-icon"></i>
+                                <span>Charging Failure / Loose Cable Connection</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">If the device charges intermittently or only when the cable is angled, dust/lint blockage inside the port is likely. If lint cleaning fails, the metal contact traces in the port have worn out, requiring a new charging port connector logic strip.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Port Cleansing / Charging Port Swap</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 20-30 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 5: Software Lag -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-gauge-simple-high status-icon"></i>
+                                <span>Extreme Operating System Lag & Freezes</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">System stuttering is typically linked to corrupted firmware partitions, system caches being full, or failing onboard storage chips. A complete software flash restores native responsive velocities.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Custom OS flash / partition reset</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 45-60 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 6: Touchscreen Issues -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-hand-pointer status-icon"></i>
+                                <span>Touchscreen ghost clicks / dead areas</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">Ghost clicks or non-responsive dead zones across the screen represent a crack in the capacitive digitizer grid array. This requires replacing the glass digitizer assembly to restore clean touch registration.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Digitizer Screen Swap</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 30 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Issue 7: Boot Loop Errors -->
+                    <div class="diagnostic-item">
+                        <div class="diagnostic-header">
+                            <div class="diagnostic-header-left">
+                                <i class="fas fa-rotate status-icon"></i>
+                                <span>Infinite Boot Loop / Stuck on Apple/Android logo</span>
+                            </div>
+                            <i class="fas fa-chevron-down chevron-icon"></i>
+                        </div>
+                        <div class="diagnostic-content">
+                            <p style="line-height: 1.6; margin-top:10px;">Sticking on the startup screen is triggered by corrupted kernel software, power key circuits shorting out, or storage blocks failing. We inspect the logic board and flash firmware to recover normal boot cycles.</p>
+                            <div class="diagnostic-meta-row">
+                                <span class="diagnostic-meta-item"><i class="fas fa-screwdriver-wrench"></i> Suggested Action: Hardware Diagnostics / Flash restore</span>
+                                <span class="diagnostic-meta-item"><i class="fas fa-stopwatch"></i> Average Fix Time: 60-90 Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 3: Mail-In Repair Service Timeline -->
+            <div style="margin-bottom: 80px;" class="scroll-animate">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <span style="color:var(--accent-orange); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">No service center nearby? No problem.</span>
+                    <h3 style="font-size:28px; margin-top:5px;">Mail-In Repair Service</h3>
+                </div>
+
+                <div class="mailin-timeline-container">
+                    <div class="mailin-timeline-bar-bg"></div>
+                    <div class="mailin-timeline-bar-active" id="mailin-progress-bar"></div>
+                    <div class="mailin-timeline-grid">
+                        <!-- Step 1 -->
+                        <div class="mailin-timeline-item active" data-step="1">
+                            <div class="mailin-timeline-icon"><i class="fas fa-file-signature"></i></div>
+                            <h4>1. Request Repair</h4>
+                            <p>Submit details online & print custom packing label.</p>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="mailin-timeline-item" data-step="2">
+                            <div class="mailin-timeline-icon"><i class="fas fa-box-open"></i></div>
+                            <h4>2. Ship Device</h4>
+                            <p>Send device via secure tracking carrier package.</p>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="mailin-timeline-item" data-step="3">
+                            <div class="mailin-timeline-icon"><i class="fas fa-microscope"></i></div>
+                            <h4>3. Expert Diagnosis</h4>
+                            <p>We receive the parcel & test all chip hardware.</p>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="mailin-timeline-item" data-step="4">
+                            <div class="mailin-timeline-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                            <h4>4. Repair & Testing</h4>
+                            <p>Certified engineers swap modules & run 30-point diagnostics.</p>
+                        </div>
+                        <!-- Step 5 -->
+                        <div class="mailin-timeline-item" data-step="5">
+                            <div class="mailin-timeline-icon"><i class="fas fa-truck-ramp-box"></i></div>
+                            <h4>5. Safe Return Delivery</h4>
+                            <p>Device shipped back with tracking and signature release.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subsection 4: Walk-In Appointment Booking System -->
+            <div style="margin-bottom: 80px;" class="scroll-animate" id="walkin-booking">
+                <div class="glass-card" style="max-width:800px; margin: 0 auto; padding: 40px; border-color:var(--border-glow);">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <span style="color:var(--accent-orange); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Skip the Queue</span>
+                        <h3 style="font-size:28px; margin-top:5px;">Book Walk-In Appointment</h3>
+                        <p style="font-size:13px; color:var(--text-secondary); margin-top:5px;">Secure a dedicated slot at our service center counter for express turnaround repairs.</p>
+                    </div>
+
+                    <form id="home2-walkin-form" onsubmit="event.preventDefault(); alert('Walk-in booking confirmed! A ticket code has been sent to your phone number.'); this.reset();">
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                            <!-- Brand -->
+                            <div class="floating-form-group select-wrap">
+                                <select id="book-brand" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Apple">Apple iPhone</option>
+                                    <option value="Samsung">Samsung Galaxy</option>
+                                    <option value="Google">Google Pixel</option>
+                                    <option value="Other">Other / Tablets</option>
+                                </select>
+                                <span class="floating-label">Select Brand</span>
+                            </div>
+                            <!-- Repair Type -->
+                            <div class="floating-form-group select-wrap">
+                                <select id="book-repair" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Screen">Screen Replacement</option>
+                                    <option value="Battery">Battery Swap</option>
+                                    <option value="Charging">Charging Port repair</option>
+                                    <option value="Camera">Camera Replacement</option>
+                                    <option value="Other">Other Hardware Issue</option>
+                                </select>
+                                <span class="floating-label">Select Repair Type</span>
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                            <!-- Date -->
+                            <div class="floating-form-group">
+                                <input type="date" id="book-date" placeholder=" " required>
+                                <span class="floating-label">Preferred Date</span>
+                            </div>
+                            <!-- Time Slot -->
+                            <div class="floating-form-group select-wrap">
+                                <select id="book-time" required>
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Morning">Morning (9:00 AM - 12:00 PM)</option>
+                                    <option value="Midday">Midday (12:00 PM - 3:00 PM)</option>
+                                    <option value="Afternoon">Afternoon (3:00 PM - 5:00 PM)</option>
+                                    <option value="Evening">Evening (5:00 PM - 7:00 PM)</option>
+                                </select>
+                                <span class="floating-label">Select Time Slot</span>
+                            </div>
+                        </div>
+
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                            <!-- Customer Name -->
+                            <div class="floating-form-group">
+                                <input type="text" id="book-name" placeholder=" " required>
+                                <span class="floating-label">Your Full Name</span>
+                            </div>
+                            <!-- Contact Phone -->
+                            <div class="floating-form-group">
+                                <input type="tel" id="book-phone" placeholder=" " required>
+                                <span class="floating-label">Phone Number</span>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="floating-form-group">
+                            <input type="email" id="book-email" placeholder=" " required>
+                            <span class="floating-label">Email Address</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: var(--radius-sm); font-size:15px; padding:15px 0;">
+                            <i class="fas fa-check-double"></i> Confirm Express Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Subsection 5: Warranty Terms & Device Protection -->
+            <div class="scroll-animate">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span style="color:var(--accent-orange); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Our Promise</span>
+                    <h3 style="font-size:26px; margin-top:5px;">Warranty Terms & Device Safety</h3>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Parts -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-circle-notch"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Genuine Replacement Parts</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">We only utilize parts sourced directly from original manufacturers or top-tier suppliers, ensuring high clarity and tactile responsiveness.</p>
+                    </div>
+                    <!-- Technicians -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-user-check"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Certified Technicians</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Every diagnostic process is run by engineers with ESD training and professional logic board repair certifications.</p>
+                    </div>
+                    <!-- Post-Repair Support -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-headset"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Post-Repair Support</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Encountered issues after your repair? Drop by any time. We will calibrate and re-test components for free under warranty.</p>
+                    </div>
+                    <!-- Service Warranty -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-file-contract"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Lifetime Parts Guarantee</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">All logic components, charging ports, and screen assemblies are backed by a complete lifetime parts guarantee against failure.</p>
+                    </div>
+                    <!-- Device Safety -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-shield-halved"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Device Safety Guarantee</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Devices are stored in fireproof safe lockers during overnight cycles, with anti-static wrist bands utilized for all motherboard repairs.</p>
+                    </div>
+                    <!-- 90-Day Return -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-rotate-left"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">90-Day No-Questions Return</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Not satisfied with your refurbished device? Return it within 90 days for a full refund — no paperwork, no hassle, no questions asked.</p>
+                    </div>
+                    <!-- Free Diagnostic -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-stethoscope"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Free Diagnostic Check</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Walk into any service center for a complimentary full-device diagnostic. We test battery health, display pixels, cameras, and more at no charge.</p>
+                    </div>
+                    <!-- Data Privacy -->
+                    <div class="glass-card" style="padding:25px;">
+                        <div style="font-size:32px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-user-shield"></i></div>
+                        <h4 style="font-size:17px; margin-bottom:10px; color:var(--text-primary);">Data Privacy Protection</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Your personal data stays yours. We never access, copy, or store files on your device. On request, we can perform a secure factory wipe under your supervision.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Slider -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Testimonials</p>
+                <h2>What Our Customers <span class="glow-text">Are Saying</span></h2>
+                <div class="subtitle">Join thousands of clients who experience fast, reliable repairs and certified device purchases at our service centers.</div>
+            </div>
+
+            <div class="slider-container scroll-animate">
+                <div class="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card">
+                            <div class="slide-quote">"I purchased a refurbished iPad Pro and the condition is flawless. It feels exactly like a brand-new model, and the battery lasts all day. Highly recommend their certified pre-owned devices!"</div>
+                            <div class="slide-author">
+                                <div class="author-img" style="background:#ff5500; color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:18px;">JD</div>
+                                <div class="author-name">
+                                    <h4>James D.</h4>
+                                    <p>Verified Buyer - iPad Pro 12.9"</p>
+                                </div>
+                            </div>
+                            <div style="position:absolute; top:3px; right:35px; color:var(--color-accent-amber); font-size:18px; display:flex; gap:3px; align-items:center;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card">
+                            <div class="slide-quote">"Express screen replacement took under 30 minutes! They even gave me a free tempered glass shield as part of the combo deal. Fantastic service and outstanding warranty protection."</div>
+                            <div class="slide-author">
+                                <div class="author-img" style="background:var(--accent-orange); color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:18px;">MR</div>
+                                <div class="author-name">
+                                    <h4>Maria R.</h4>
+                                    <p>Walk-In Customer - iPhone 14 Pro Screen</p>
+                                </div>
+                            </div>
+                            <div style="position:absolute; top:3px; right:35px; color:var(--color-accent-amber); font-size:18px; display:flex; gap:3px; align-items:center;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="glass-card slide-card">
+                            <div class="slide-quote">"Used their instant appraiser to trade in my old Galaxy S23. Locked in the value online, got cash paid instantly at the service center. Zero haggling, clean and professional process."</div>
+                            <div class="slide-author">
+                                <div class="author-img" style="background:var(--color-accent-amber); color:white; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:18px;">KL</div>
+                                <div class="author-name">
+                                    <h4>Kevin L.</h4>
+                                    <p>Trade-In Customer - Galaxy S23+</p>
+                                </div>
+                            </div>
+                            <div style="position:absolute; top:3px; right:35px; color:var(--color-accent-amber); font-size:18px; display:flex; gap:3px; align-items:center;">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider dots controls -->
+                <div class="slider-controls"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace FAQs Section -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Got Questions?</p>
+                <h2>Frequently Asked <span class="glow-text">Questions</span></h2>
+                <div class="subtitle">Find helpful clarifications on refurbished devices, testing, trade-ins, and warranty terms.</div>
+            </div>
+
+            <div class="accordion-container scroll-animate">
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What is the battery health percentage guaranteed on your refurbished devices?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We guarantee a minimum of 85% battery health capacity on all pre-owned smartphones and tablets. If health drops below that threshold during testing, our technicians swap it with a brand-new high-quality replacement battery prior to sale.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How does the 12-Month Store Warranty work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Our store warranty covers diagnostics, parts, and hardware labour charges for digitizer failures, power IC issues, software freezes, and camera calibration anomalies. Note that physical drops, liquid submersion, or third-party disassembly void the warranty.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>How is the online trade-in payout computed?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>The online trade-in appraiser calculates a payout value based on device model, storage tier, carrier configuration, and wear condition. Once you lock in the quote, the value is frozen for 7 days. Drop by our counter to verify condition details and collect your cash.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>What carrier configurations do you offer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Almost 95% of our refurbished smartphones are fully factory unlocked, allowing you to insert SIM cards from T-Mobile, AT&T, Verizon, or international carriers immediately. Carrier-locked models are clearly marked with custom badges.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can I cancel or reschedule my walk-in appointment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes. You can reschedule or cancel at any time. Simply tap the link in the confirmation SMS or email, or call our branch phone number to secure a new time slot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner & Newsletter -->
+    <section class="section-padding" style="background-color: var(--bg-primary); position: relative; z-index: 10;">
+        <div class="container">
+            <div class="glass-card scroll-animate" style="border-color: var(--border-glow); background: var(--bg-card-gradient); padding: 50px; text-align: center;">
+                <h2 style="font-size: 36px; margin-bottom: 15px; font-family: var(--font-heading);">Ready to Upgrade Your Mobile Experience?</h2>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 30px; font-size: 15px;">Shop certified premium devices or book your walk-in appointment today. Stay in the loop with exclusive tech repair discounts by subscribing to our bulletin.</p>
+                
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');" style="max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Enter your email address" class="newsletter-input" required aria-label="Email Address">
+                    <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+
+    <!-- Custom Script for Home2 Diagnostics & Mail-In timeline animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- DIAGNOSTICS ACCORDION INTERACTION ---
+            const diagHeaders = document.querySelectorAll('.diagnostic-header');
+            diagHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const item = header.parentElement;
+                    const content = item.querySelector('.diagnostic-content');
+                    const isActive = item.classList.contains('active');
+                    
+                    // Close other diagnostic items
+                    document.querySelectorAll('.diagnostic-item').forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                        otherItem.querySelector('.diagnostic-content').style.maxHeight = null;
+                    });
+
+                    if (!isActive) {
+                        item.classList.add('active');
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
+            });
+
+            // Open the first diagnostics accordion by default
+            if(diagHeaders.length > 0) {
+                diagHeaders[0].click();
+            }
+
+            // --- MAIL-IN TIMELINE PROGRESS BAR ANIMATION ---
+            const mailinTimeline = document.querySelector('.mailin-timeline-container');
+            const progressBar = document.getElementById('mailin-progress-bar');
+            const timelineSteps = document.querySelectorAll('.mailin-timeline-item');
+            
+            if (mailinTimeline && progressBar && timelineSteps.length > 0) {
+                // Animate timeline states sequentially when section is scrolled into view
+                const observeTimeline = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            let currentStep = 1;
+                            const totalSteps = timelineSteps.length;
+                            
+                            const interval = setInterval(() => {
+                                if (currentStep <= totalSteps) {
+                                    // Highlight active steps
+                                    timelineSteps.forEach((step, idx) => {
+                                        if (idx < currentStep) {
+                                            step.classList.add('active');
+                                        }
+                                    });
+                                    // Update progress line width
+                                    const percent = ((currentStep - 1) / (totalSteps - 1)) * 80; // maps to left: 10%, right: 10%
+                                    progressBar.style.width = `${percent}%`;
+                                    currentStep++;
+                                } else {
+                                    clearInterval(interval);
+                                }
+                            }, 800);
+                            
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                observeTimeline.observe(mailinTimeline);
+            }
+        });
+    </script>
+</body>
+</html>

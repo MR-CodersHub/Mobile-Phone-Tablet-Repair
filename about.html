@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Technical Operations | FixPoint</title>
+    <meta name="description" content="Meet our certified micro-soldering and calibration engineers. Explore the timeline and values behind our premium repair services.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Title Banner -->
+    <section class="section-padding hero-banner" style="padding-top: 140px; padding-bottom: 90px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-screwdriver-wrench banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div class="section-title-block scroll-animate animated">
+                <p>Service Center History & Labs</p>
+                <h1>Our Mission & <span class="glow-text">Story</span></h1>
+                <div class="subtitle">Meet the micro-soldering specialists and calibration engineers bringing next-generation device restoration directly to shopping centers.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redesigned Story Grid & Milestones Timeline -->
+    <section class="section-padding" style="padding-top: 30px;">
+        <div class="container">
+            <div class="about-grid" style="grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+                <!-- Left Pane: Our Mission Description -->
+                <div class="scroll-animate" style="display:flex; flex-direction:column; justify-content:center; gap: 20px;">
+                    <h2 style="font-size:36px; line-height:1.2;">Quality Diagnostics, <span class="glow-text">Performed in Public View</span></h2>
+                    <p style="color: var(--text-secondary); font-size:15px; line-height:1.6;">FixPoint was launched with a single objective: to transform device diagnostics and chip-level logic board soldering into a public, premium service. We believe customer trust is won when the repair bench is open and transparent.</p>
+                    <p style="color: var(--text-secondary); font-size:15px; line-height:1.6;">By positioning clean, high-tech glass workspaces in primary retail hubs, we eliminated the stress of shipping phones away. Today, we manage advanced regional micro-soldering labs, recover water-damaged assemblies, and recycle electronic waste, keeping over 15,000 devices active.</p>
+                    
+                    <div style="background:rgba(255,85,0,0.05); border:1px solid var(--border-glow); border-radius:var(--radius-sm); padding:20px; margin-top:15px;">
+                        <h4 style="font-size:15px; margin-bottom:5px; color:var(--text-primary);"><i class="fas fa-microchip" style="color:var(--accent-orange); margin-right:8px;"></i>Operational Standards</h4>
+                        <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Every diagnostic microscope workspace employs electrostatic discharge protection, multi-point calibration standards, and certified logic analyzers.</p>
+                    </div>
+                </div>
+
+                <!-- Right Pane: Growth Milestones Timeline -->
+                <div class="glass-card scroll-animate" style="padding: 40px; border-color: var(--border-glass);">
+                    <h3 style="font-size: 20px; font-family:var(--font-heading); margin-bottom:30px; color:var(--text-primary);">Corporate Timeline</h3>
+                    
+                    <div class="tracker-timeline" style="padding-left: 25px; margin-top: 0;">
+                        <div class="tracker-timeline-bar" style="height: 100%;"></div>
+
+                        <!-- 2018 -->
+                        <div class="tracker-node completed" style="padding-bottom: 25px;">
+                            <h4 style="font-size: 15px; font-weight: 700; color: var(--accent-orange);">2018: Ground Zero</h4>
+                            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">Launched Service Center #1 at Tech City West Galleria Mall. Initial concept for public display repairs established.</p>
+                        </div>
+                        
+                        <!-- 2020 -->
+                        <div class="tracker-node completed" style="padding-bottom: 25px;">
+                            <h4 style="font-size: 15px; font-weight: 700; color: var(--accent-orange);">2020: Regional Expansion</h4>
+                            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">Opened 5 regional service center locations. Established internal diagnostic parts warehousing supply chains.</p>
+                        </div>
+
+                        <!-- 2023 -->
+                        <div class="tracker-node completed" style="padding-bottom: 25px;">
+                            <h4 style="font-size: 15px; font-weight: 700; color: var(--accent-orange);">2023: Logic Board Lab</h4>
+                            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">Opened in-house logic board micro-soldering cleanroom labs, supporting complex IC chip swaps.</p>
+                        </div>
+
+                        <!-- 2026 -->
+                        <div class="tracker-node completed" style="padding-bottom: 0;">
+                            <h4 style="font-size: 15px; font-weight: 700; color: var(--accent-orange);">2026: 15,000+ Fixed</h4>
+                            <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.4;">Celebrated over 15,000 successful smartphone repairs, saving tons of micro-electronics from e-waste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meet the Team (Glowing Agent Profile Cards) -->
+            <div style="margin-top: 100px;">
+                <div class="section-title-block scroll-animate">
+                    <p>Certified Staff</p>
+                    <h2>Certified Repair <span class="glow-text">Agents</span></h2>
+                    <div class="subtitle">Meet our lead diagnostic technicians. Each expert undergoes strict certification in circuitry analysis, ESD protection, and parts calibration.</div>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Agent 1 -->
+                    <div class="glass-card team-card scroll-animate" style="border-color: var(--border-glass); padding: 0; overflow: hidden;">
+                        <div class="team-image-wrap" style="height: 220px; background: rgba(255, 85, 0, 0.02); display: flex; align-items: flex-end; justify-content: center; border-bottom: 1px solid var(--border-glass); position: relative;">
+                            <!-- Glowing Halo -->
+                            <div style="position: absolute; width: 140px; height: 140px; border-radius: 50%; border: 1px solid var(--border-glow); box-shadow: var(--shadow-glow); z-index: 1; top: 40px; pointer-events: none;"></div>
+                            <img src="assets/hero_repair_mockup.png" alt="Alex Mercer" style="height: 200px; object-fit: contain; filter: grayscale(1); z-index: 2; opacity:0.9;">
+                        </div>
+                        <div class="team-info" style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">Alex Mercer</h3>
+                            <div class="team-role" style="font-size:12px; margin-bottom:20px;">Lead Logic Board Specialist</div>
+                            
+                            <!-- Skill bars -->
+                            <div style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>Micro-Soldering</span>
+                                        <span style="color: #00ff66;">98%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 98%; background: #00ff66;"></div></div>
+                                </div>
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>Diagnostics</span>
+                                        <span style="color: var(--accent-orange);">95%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 95%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 2 -->
+                    <div class="glass-card team-card scroll-animate" style="border-color: var(--border-glass); padding: 0; overflow: hidden;">
+                        <div class="team-image-wrap" style="height: 220px; background: rgba(255, 85, 0, 0.02); display: flex; align-items: flex-end; justify-content: center; border-bottom: 1px solid var(--border-glass); position: relative;">
+                            <!-- Glowing Halo -->
+                            <div style="position: absolute; width: 140px; height: 140px; border-radius: 50%; border: 1px solid var(--border-glow); box-shadow: var(--shadow-glow); z-index: 1; top: 40px; pointer-events: none;"></div>
+                            <img src="assets/tablet_repair.png" alt="Sarah Jenkins" style="height: 200px; object-fit: contain; filter: grayscale(1); z-index: 2; opacity:0.9;">
+                        </div>
+                        <div class="team-info" style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">Sarah Jenkins</h3>
+                            <div class="team-role" style="font-size:12px; margin-bottom:20px;">Display Calibration Specialist</div>
+                            
+                            <!-- Skill bars -->
+                            <div style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>Display Calibration</span>
+                                        <span style="color: #00ff66;">96%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 96%; background: #00ff66;"></div></div>
+                                </div>
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>Tablet Repair</span>
+                                        <span style="color: var(--accent-orange);">94%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 94%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agent 3 -->
+                    <div class="glass-card team-card scroll-animate" style="border-color: var(--border-glass); padding: 0; overflow: hidden;">
+                        <div class="team-image-wrap" style="height: 220px; background: rgba(255, 85, 0, 0.02); display: flex; align-items: flex-end; justify-content: center; border-bottom: 1px solid var(--border-glass); position: relative;">
+                            <!-- Glowing Halo -->
+                            <div style="position: absolute; width: 140px; height: 140px; border-radius: 50%; border: 1px solid var(--border-glow); box-shadow: var(--shadow-glow); z-index: 1; top: 40px; pointer-events: none;"></div>
+                            <img src="assets/accessories_showcase.png" alt="Marcus Vance" style="height: 200px; object-fit: contain; filter: grayscale(1); z-index: 2; opacity:0.9;">
+                        </div>
+                        <div class="team-info" style="padding: 25px;">
+                            <h3 style="font-size: 18px; margin-bottom: 4px;">Marcus Vance</h3>
+                            <div class="team-role" style="font-size:12px; margin-bottom:20px;">QC & Calibration Manager</div>
+                            
+                            <!-- Skill bars -->
+                            <div style="display: flex; flex-direction: column; gap: 12px; text-align: left;">
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>Diagnostics & QC</span>
+                                        <span style="color: #00ff66;">99%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 99%; background: #00ff66;"></div></div>
+                                </div>
+                                <div>
+                                    <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:4px; color:var(--text-secondary);">
+                                        <span>ESD Safety Protocols</span>
+                                        <span style="color: var(--accent-orange);">100%</span>
+                                    </div>
+                                    <div class="rating-bar" style="height: 4px;"><div class="rating-bar-fill" style="width: 100%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact by Numbers -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Our Reach</p>
+                <h2>Service Center <span class="glow-text">Impact</span></h2>
+                <div class="subtitle">Real numbers from our locations and labs that define our commitment to device repair excellence.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:10px;"><i class="fas fa-microchip"></i></div>
+                    <h3 style="font-size:28px; font-weight:800; color:var(--text-primary);">15,000+</h3>
+                    <p style="font-size:13px; color:var(--text-secondary);">Devices Repaired & Restored</p>
+                </div>
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:10px;"><i class="fas fa-store"></i></div>
+                    <h3 style="font-size:28px; font-weight:800; color:var(--text-primary);">12</h3>
+                    <p style="font-size:13px; color:var(--text-secondary);">Service Centers Across the Region</p>
+                </div>
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:10px;"><i class="fas fa-star"></i></div>
+                    <h3 style="font-size:28px; font-weight:800; color:var(--text-primary);">99.8%</h3>
+                    <p style="font-size:13px; color:var(--text-secondary);">Customer Satisfaction Rating</p>
+                </div>
+                <div class="glass-card" style="padding:30px; text-align:center;">
+                    <div style="font-size:36px; color:var(--accent-orange); margin-bottom:10px;"><i class="fas fa-recycle"></i></div>
+                    <h3 style="font-size:28px; font-weight:800; color:var(--text-primary);">8.2T</h3>
+                    <p style="font-size:13px; color:var(--text-secondary);">E-Waste Diverted from Landfills (lbs)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Commitment -->
+    <section class="section-padding" style="background-color: var(--bg-primary);">
+        <div class="container">
+            <div class="section-title-block scroll-animate">
+                <p>Our Values</p>
+                <h2>Commitment Beyond <span class="glow-text">Repair</span></h2>
+                <div class="subtitle">We take responsibility for the devices we fix, the technicians we train, and the environment we operate in.</div>
+            </div>
+
+            <div class="services-grid scroll-animate">
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-leaf"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Eco-Conscious Operations</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">We recycle 100% of replaced batteries, shattered glass, and damaged circuit boards through certified e-waste partners. Our packaging uses only recycled materials.</p>
+                </div>
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Continuous Training</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">Every technician completes 200+ hours of lab training per year, covering new device architectures, micro-soldering techniques, and diagnostic software updates.</p>
+                </div>
+                <div class="glass-card" style="padding:25px;">
+                    <div style="font-size:28px; color:var(--accent-orange); margin-bottom:15px;"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3 style="font-size:18px; margin-bottom:10px;">Community Support</h3>
+                    <p style="font-size:13px; color:var(--text-secondary); line-height:1.5;">We donate restored devices to local schools and non-profits. Each year, over 500 refurbished tablets are placed with students who lack access to technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

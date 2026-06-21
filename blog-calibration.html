@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why OEM Calibrations Matter for Replaced Displays | FixPoint Blog</title>
+    <meta name="description" content="Explore why cheap aftermarket screens cause touch failures and how professional calibration tools sync the display controller IC serialization.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Article Content Section -->
+    <main class="section-padding hero-banner" style="padding-top: 140px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-tools banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div style="font-size: 13px; color: var(--text-secondary); margin-bottom: 25px; display: flex; gap: 8px; align-items: center;">
+                <a href="index.html" style="hover: color: var(--accent-orange);">Home</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px; color: var(--text-muted);"></i>
+                <a href="blog.html" style="hover: color: var(--accent-orange);">Blog</a>
+                <i class="fas fa-chevron-right" style="font-size: 10px; color: var(--text-muted);"></i>
+                <span style="color: var(--text-primary); font-weight: 500;">OEM Calibration</span>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <!-- Article Header -->
+                <div style="margin-bottom: 40px;">
+                    <span style="font-size: 11px; font-weight: 700; color: var(--accent-orange); background: var(--accent-orange-dim); padding: 5px 12px; border-radius: var(--radius-full); text-transform: uppercase; letter-spacing: 0.05em;">Calibration</span>
+                    <h1 style="font-size: 42px; margin-top: 15px; margin-bottom: 20px; line-height: 1.2;">Why OEM Calibrations Matter for Replaced Displays</h1>
+                    
+                    <div style="display: flex; gap: 20px; align-items: center; border-bottom: 1px solid var(--border-glass); padding-bottom: 20px; font-size: 13.5px; color: var(--text-secondary); flex-wrap: wrap;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <div style="width: 30px; height: 30px; border-radius: 50%; background: var(--accent-orange); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12px;">SJ</div>
+                            <span style="color: var(--text-primary); font-weight: 600;">Sarah Jenkins</span>
+                        </div>
+                        <div><i class="fas fa-calendar-days" style="margin-right: 6px;"></i> May 15, 2026</div>
+                        <div><i class="fas fa-clock" style="margin-right: 6px;"></i> 6 Min Read</div>
+                    </div>
+                </div>
+
+                <!-- Featured Image -->
+                <div class="glass-card" style="padding: 10px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 40px; text-align: center;">
+                    <img src="assets/tablet_repair.png" alt="Display Assembly & Calibration" style="border-radius: var(--radius-sm); max-height: 380px; width: 100%; object-fit: contain; background: rgba(0,0,0,0.2);">
+                </div>
+
+                <!-- Article Body -->
+                <div style="line-height: 1.8; font-size: 16px; color: var(--text-secondary); display: flex; flex-direction: column; gap: 24px;">
+                    <p>Have you ever had a smartphone screen replaced at a cheap shop, only to find the touch response laggy, the auto-brightness broken, or the color profile muddy? This isn't just "bad luck." It is the direct consequence of aftermarket display layers missing the critical hardware-level synchronization required by modern mobile chipsets.</p>
+                    
+                    <p>At FixPoint, display swaps undergo a rigorous multi-point optical and digital calibration using specialized instrumentation. Our Lead Display Calibration Specialist, Sarah Jenkins, breaks down the technology of display serialization and why OEM standards are non-negotiable.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">1. The Display Serialization Problem</h2>
+                    <p>Modern manufacturers cryptographically lock display panels to their corresponding logic board. When a phone is booted, the secure enclave processor queries the display controller IC for its unique hardware serialization key. If the keys do not match, the operating system limits native display capabilities as a security precaution.</p>
+                    <p>On Apple iPhones, for instance, a mismatched screen disables <strong>True Tone</strong> (ambient color matching) and creates persistent system alert warnings, even if the replacement glass is structurally pristine.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">2. How We Restore Serialization</h2>
+                    <p>To bypass non-genuine software lockouts and restore standard UI velocity, our technicians use specialized EEPROM programmers. We extract the original display calibration data direct from the broken screen's controller microchip, including the specific screen brightness curves and serials. We then flash this dataset directly onto the new replacement display controller, establishing a perfect handshake with the secure CPU enclave.</p>
+
+                    <!-- Quote Block -->
+                    <div class="glass-card" style="padding: 25px; border-left: 4px solid var(--accent-orange); margin: 15px 0;">
+                        <h4 style="font-size: 16px; margin-bottom: 8px; color: var(--text-primary); font-weight: 700;"><i class="fas fa-quote-left" style="color:var(--accent-orange); margin-right:8px;"></i>Sarah Jenkins on Calibration Standards</h4>
+                        <p style="font-size: 14.5px; line-height: 1.6; margin: 0; font-style: italic;">"Calibration isn't just about making the touch screen function; it's about matching color points. Modern AMOLED panels have highly customized RGB curves. Without digital flashing, your screen runs at high voltage, creating early pixel burn-in."</p>
+                    </div>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">3. Touch & Digitizer Sensitivity Calibration</h2>
+                    <p>Aftermarket panels use cheap capacitive grids that read touch signals unevenly, resulting in "ghost clicks" or unresponsive keyboard edges. Original OEM-grade glass structures contain denser digitizer grids. Post-installation, we perform a 30-point touch test using automated software to ensure the capacitance matches exactly 1:1 with native operating specifications.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">4. Ambient Sensor Alignment</h2>
+                    <p>Your screen houses complex ambient light and proximity sensors behind the glass. During aftermarket swaps, incorrect adhesive thickness can block these sensors, causing the screen to remain black during phone calls or fail to adjust brightness in dark rooms.</p>
+                    <p><strong>FixPoint Quality Control:</strong> We use pre-cut thermal gaskets and UV-curable optical clear adhesives (LOCA) matching factory thickness, ensuring all rear sensors receive correct light flow without obstruction.</p>
+
+                    <h2 style="font-size: 26px; color: var(--text-primary); margin-top: 15px; font-family: var(--font-heading); font-weight: 700;">Conclusion</h2>
+                    <p>A screen replacement is more than just swapping cracked glass; it is a delicate integration of hardware, cryptography, and micro-optics. When looking for repairs, prioritize service centers that employ Level-3 diagnostics, execute EEPROM data flashing, and back their materials with lifetime warranties.</p>
+                </div>
+
+                <!-- Author Card -->
+                <div class="glass-card" style="display: flex; gap: 20px; align-items: center; margin-top: 50px; padding: 30px; border-color: var(--border-glass); flex-wrap: wrap;">
+                    <div style="width: 70px; height: 70px; border-radius: 50%; background: var(--accent-orange); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 24px; flex-shrink:0;">SJ</div>
+                    <div style="flex: 1; min-width: 250px;">
+                        <span style="font-size: 11px; text-transform: uppercase; color: var(--accent-orange); font-weight: 700;">Written By</span>
+                        <h4 style="font-size: 18px; margin: 4px 0;">Sarah Jenkins</h4>
+                        <p style="font-size: 13.5px; color: var(--text-secondary); line-height: 1.5; margin: 0;">Sarah Jenkins is FixPoint's Lead Display Calibration Specialist. With over 6 years of specializing in micro-optics, screen refurbishing, and digital calibrations, she maintains strict quality control over display assemblies.</p>
+                    </div>
+                </div>
+
+                <!-- Related Articles Section -->
+                <div style="margin-top: 80px; border-top: 1px solid var(--border-glass); padding-top: 50px;">
+                    <h3 style="font-size: 24px; font-family: var(--font-heading); margin-bottom: 30px; text-align: center;">Related Articles</h3>
+                    
+                    <div class="blog-grid" style="margin-top: 0;">
+                        <!-- Battery Health -->
+                        <div class="glass-card blog-card">
+                            <div class="blog-card-image-wrap" style="height: 160px;">
+                                <span class="blog-card-badge">Battery Care</span>
+                                <img src="assets/accessories_showcase.png" alt="Battery Health">
+                            </div>
+                            <div class="blog-card-content" style="padding: 20px;">
+                                <div class="blog-card-meta" style="margin-bottom: 10px; padding-bottom: 8px;">
+                                    <span><i class="fas fa-clock"></i> 4 Min Read</span>
+                                    <span>May 20, 2026</span>
+                                </div>
+                                <h3 style="font-size: 17px; margin-bottom: 8px;">5 Secrets to Extending Refurbished Battery Health</h3>
+                                <p style="font-size: 13px; line-height: 1.5; margin-bottom: 15px;">Actionable tips and chemical insights to double the lifespan of your phone battery.</p>
+                                <a href="blog-battery.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Eco Tech -->
+                        <div class="glass-card blog-card">
+                            <div class="blog-card-image-wrap" style="height: 160px;">
+                                <span class="blog-card-badge" style="background:#00ff66; color:#060608; box-shadow: 0 4px 10px rgba(0, 255, 102, 0.3);">Sustainability</span>
+                                <img src="assets/hero_repair_mockup.png" alt="Eco Tech">
+                            </div>
+                            <div class="blog-card-content" style="padding: 20px;">
+                                <div class="blog-card-meta" style="margin-bottom: 10px; padding-bottom: 8px;">
+                                    <span><i class="fas fa-clock"></i> 5 Min Read</span>
+                                    <span>May 08, 2026</span>
+                                </div>
+                                <h3 style="font-size: 17px; margin-bottom: 8px;">Electronic Waste: The Power of Refurbished Tech</h3>
+                                <p style="font-size: 13px; line-height: 1.5; margin-bottom: 15px;">How purchasing pre-owned smartphones keeps electronics out of landfill waste.</p>
+                                <a href="blog-waste.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking CTA -->
+                <div class="glass-card scroll-animate animated" style="margin-top: 80px; padding: 40px; border-color: var(--border-glow); background: var(--bg-card-gradient); text-align: center;">
+                    <h3 style="font-size: 24px; font-family: var(--font-heading); margin-bottom: 10px;">Have a Fractured or Glitching Screen?</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; max-width: 500px; margin: 0 auto 25px;">Avoid poor responsiveness. Book a premium screen replacement with our certified calibration experts today.</p>
+                    <a href="booking.html" class="btn btn-primary">Book Screen Replacement</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1a24"/><stop offset="100%" stop-color="#0d0d14"/></linearGradient>
+    <linearGradient id="caseGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#2a2a3a"/><stop offset="100%" stop-color="#14141e"/></linearGradient>
+    <linearGradient id="orangeGlow" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#ff5500"/><stop offset="100%" stop-color="#cc4400"/></linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg1)" rx="16"/>
+  <rect x="40" y="40" width="320" height="220" rx="28" fill="url(#caseGrad)" stroke="rgba(255,85,0,0.3)" stroke-width="1.5"/>
+  <rect x="55" y="55" width="290" height="190" rx="18" fill="#1e1e2e" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="55" y="55" width="290" height="190" rx="18" fill="url(#caseGrad)" opacity="0.5"/>
+  <circle cx="200" cy="185" r="55" fill="rgba(255,85,0,0.05)" stroke="rgba(255,85,0,0.15)" stroke-width="1"/>
+  <circle cx="200" cy="185" r="35" fill="rgba(255,85,0,0.08)" stroke="rgba(255,85,0,0.2)" stroke-width="1"/>
+  <rect x="160" y="100" width="80" height="80" rx="16" fill="rgba(255,85,0,0.1)" stroke="var(--accent-orange)" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="140" r="18" fill="none" stroke="rgba(255,85,0,0.4)" stroke-width="2"/>
+  <path d="M192 140 L198 146 L208 134" stroke="#00ff66" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+  <rect x="155" y="235" width="90" height="8" rx="4" fill="rgba(255,85,0,0.15)"/>
+  <rect x="55" y="245" width="20" height="6" rx="3" fill="rgba(255,85,0,0.1)"/>
+  <rect x="325" y="245" width="20" height="6" rx="3" fill="rgba(255,85,0,0.1)"/>
+  <rect x="183" y="96" width="34" height="8" rx="4" fill="rgba(255,85,0,0.15)"/>
+  <rect x="55" y="220" width="8" height="15" rx="3" fill="rgba(255,85,0,0.1)"/>
+  <rect x="337" y="220" width="8" height="15" rx="3" fill="rgba(255,85,0,0.1)"/>
+</svg>

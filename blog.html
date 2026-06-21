@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tech Journal & Insights | FixPoint</title>
+    <meta name="description" content="Explore technical repair tips, refurbished device maintenance guides, and environmental news from the FixPoint engineering team.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Title Banner -->
+    <section class="section-padding hero-banner" style="padding-top: 140px; padding-bottom: 20px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-screwdriver-wrench banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div class="section-title-block scroll-animate animated">
+                <p>Service Center Insights</p>
+                <h1>FixPoint <span class="glow-text">Tech Journal</span></h1>
+                <div class="subtitle">Tips, tutorials, and engineering insights on smartphone restoration, lithium battery longevity, and electronic waste reduction.</div>
+            </div>
+
+            <!-- Blog Control Center: Search & Filter Tabs -->
+            <div class="glass-card scroll-animate animated" style="max-width: 900px; margin: 0 auto; padding: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+                    <!-- Search Input -->
+                    <div class="search-input-wrap" style="max-width: 380px; width: 100%;">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="blog-search-input" placeholder="Search articles (e.g. Battery, Screen...)" aria-label="Search Articles">
+                    </div>
+                    <!-- Filter category pills -->
+                    <div class="filter-tabs" id="blog-filter-tabs">
+                        <button class="filter-tab active" data-filter="all">All Articles</button>
+                        <button class="filter-tab" data-filter="power">Power</button>
+                        <button class="filter-tab" data-filter="display">Display</button>
+                        <button class="filter-tab" data-filter="eco">Eco-friendly</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="blog-grid" id="blog-posts-grid">
+                
+                <!-- Post 1 -->
+                <div class="glass-card blog-card filterable-item scroll-animate" data-category="power">
+                    <div class="blog-card-image-wrap">
+                        <span class="blog-card-badge">Battery Care</span>
+                        <img src="assets/accessories_showcase.png" alt="Battery Charging Showcase">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span><i class="fas fa-clock"></i> 4 Min Read</span>
+                            <span><i class="fas fa-calendar-days"></i> May 20, 2026</span>
+                        </div>
+                        <h3>5 Secrets to Extending Refurbished Battery Health</h3>
+                        <p>Swollen cells, short-cycling, and degradation. Our Lead Specialist Alex Mercer details the chemistry of maintaining peak capacity score.</p>
+                        <a href="blog-battery.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="glass-card blog-card filterable-item scroll-animate" data-category="display">
+                    <div class="blog-card-image-wrap">
+                        <span class="blog-card-badge" style="background:#ffaa00; box-shadow: 0 4px 10px rgba(255, 170, 0, 0.3);">Calibration</span>
+                        <img src="assets/tablet_repair.png" alt="Display Calibration Showcase">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span><i class="fas fa-clock"></i> 6 Min Read</span>
+                            <span><i class="fas fa-calendar-days"></i> May 15, 2026</span>
+                        </div>
+                        <h3>Why OEM Calibrations Matter for Replaced Displays</h3>
+                        <p>Cheap aftermarket screens lack correct IC touch serialization. Discover how 3D-touch, color, and brightness are restored with optical sensors.</p>
+                        <a href="blog-calibration.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="glass-card blog-card filterable-item scroll-animate" data-category="eco">
+                    <div class="blog-card-image-wrap">
+                        <span class="blog-card-badge" style="background:#00ff66; color:#060608; box-shadow: 0 4px 10px rgba(0, 255, 102, 0.3);">Sustainability</span>
+                        <img src="assets/hero_repair_mockup.png" alt="Eco Tech Showcase">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span><i class="fas fa-clock"></i> 5 Min Read</span>
+                            <span><i class="fas fa-calendar-days"></i> May 08, 2026</span>
+                        </div>
+                        <h3>Electronic Waste: The Power of Refurbished Tech</h3>
+                        <p>Each refurbished device prevents rare mineral mining and cuts carbon emissions. See how purchasing pre-owned choices help the planet.</p>
+                        <a href="blog-waste.html" class="blog-card-link">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+    
+    <!-- Simple filtering JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('#blog-filter-tabs .filter-tab');
+            const items = document.querySelectorAll('#blog-posts-grid .filterable-item');
+            const searchInput = document.getElementById('blog-search-input');
+
+            function filter() {
+                const activeTab = document.querySelector('#blog-filter-tabs .filter-tab.active');
+                const category = activeTab ? activeTab.getAttribute('data-filter') : 'all';
+                const query = searchInput.value.toLowerCase().trim();
+
+                items.forEach(item => {
+                    const itemCategory = item.getAttribute('data-category');
+                    const text = item.textContent.toLowerCase();
+                    const matchesCategory = (category === 'all' || itemCategory === category);
+                    const matchesSearch = text.includes(query);
+
+                    if (matchesCategory && matchesSearch) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    filter();
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', filter);
+            }
+        });
+    </script>
+</body>
+</html>

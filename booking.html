@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Repair | FixPoint Service Center</title>
+    <meta name="description" content="Book your mobile or tablet repair online. Track repair tickets, check statuses, and estimate repair timelines with our live client dashboard.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary active" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html" class="active">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Title Banner -->
+    <section class="section-padding hero-banner" style="padding-top: 140px; padding-bottom: 50px;">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-screwdriver-wrench banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div class="section-title-block scroll-animate animated">
+                <p>Repair Center</p>
+                <h1>Reserve a Repair & <span class="glow-text">Track Status</span></h1>
+                <div class="subtitle">Book a fast appointment below, or search your existing ticket code to check real-time diagnostics and calibration progress.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Sections -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <!-- Multi-Step Booking Wizard -->
+            <div class="booking-wizard scroll-animate">
+                <div class="glass-card" style="padding: 45px 40px;">
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <h2 style="font-size: 26px; font-family: var(--font-heading);">Schedule a <span class="glow-text">Repair Ticket</span></h2>
+                    </div>
+
+                    <!-- Wizard Progress Nodes -->
+                    <div class="wizard-steps">
+                        <div class="wizard-progress-bar"></div>
+                        <div class="wizard-step-node active">
+                            <div class="step-number">1</div>
+                            <span class="step-label">Device Details</span>
+                        </div>
+                        <div class="wizard-step-node">
+                            <div class="step-number">2</div>
+                            <span class="step-label">Schedule</span>
+                        </div>
+                        <div class="wizard-step-node">
+                            <div class="step-number">3</div>
+                            <span class="step-label">Contact</span>
+                        </div>
+                        <div class="wizard-step-node">
+                            <div class="step-number">4</div>
+                            <span class="step-label">Success</span>
+                        </div>
+                    </div>
+
+                    <form id="repair-booking-form">
+                        <!-- Step 1: Device Details -->
+                        <div class="booking-step-panel active">
+                            <div style="display:flex; flex-direction:column; gap:20px;">
+                                <div class="form-group">
+                                    <label for="booking-brand">Device Brand & Model</label>
+                                    <select id="booking-brand" class="select-custom" required>
+                                        <option value="" disabled selected>Select Brand...</option>
+                                        <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+                                        <option value="iPhone 14">iPhone 14 Pro / Plus</option>
+                                        <option value="Galaxy S24 Ultra">Galaxy S24 Ultra</option>
+                                        <option value="Galaxy S23 Plus">Galaxy S23+</option>
+                                        <option value="iPad Pro">iPad Pro 12.9"</option>
+                                        <option value="Android Tablet">Other Android Tablet</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-issue">Issue Type</label>
+                                    <select id="booking-issue" class="select-custom" required>
+                                        <option value="" disabled selected>Select Issue...</option>
+                                        <option value="Screen Replacement">Shattered Screen / Glass replacement</option>
+                                        <option value="Battery Replacement">Battery draining fast / swelling</option>
+                                        <option value="Charging Port Repair">Charging port loose / won't charge</option>
+                                        <option value="Water Damage Repair">Water / Liquid damage recovery</option>
+                                        <option value="Motherboard Repair">Logic board soldering / won't turn on</option>
+                                        <option value="Software/Unlocking">OS boot-loop / Carrier network unlock</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Upload Device Photo (Optional)</label>
+                                    <div class="file-upload-custom" onclick="document.getElementById('booking-file-input').click();">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <h4 id="upload-status-text">Drag & drop or click to upload</h4>
+                                        <p style="font-size:12px; color:var(--text-muted); margin-top:5px;">JPG, PNG or PDF (Max 5MB)</p>
+                                    </div>
+                                    <input type="file" id="booking-file-input" style="display:none;" accept="image/*" onchange="const f = this.files[0]; if (f) { document.getElementById('upload-status-text').textContent = f.name; document.getElementById('upload-status-text').style.color='#00ff66'; }">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Schedule & Mode -->
+                        <div class="booking-step-panel">
+                            <div style="display:flex; flex-direction:column; gap:20px;">
+                                <div class="form-group">
+                                    <label for="booking-mode">Preferred Service Mode</label>
+                                    <select id="booking-mode" class="select-custom" required>
+                                        <option value="service-center">Service Center Walk-In Appointment (Same Day)</option>
+                                        <option value="mailin">Mail-In Device Repair Service</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-date">Preferred Appointment Date</label>
+                                    <input type="date" id="booking-date" class="input-custom" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-time">Preferred Arrival Time Window</label>
+                                    <select id="booking-time" class="select-custom">
+                                        <option value="morning">Morning (10:00 AM - 12:30 PM)</option>
+                                        <option value="afternoon">Afternoon (1:00 PM - 4:00 PM)</option>
+                                        <option value="evening">Evening (4:30 PM - 6:30 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Contact Info -->
+                        <div class="booking-step-panel">
+                            <div style="display:flex; flex-direction:column; gap:20px;">
+                                <div class="form-group">
+                                    <label for="booking-name">Full Name</label>
+                                    <input type="text" id="booking-name" class="input-custom" placeholder="e.g. Jane Doe" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-email">Email Address</label>
+                                    <input type="email" id="booking-email" class="input-custom" placeholder="e.g. jane@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-phone">Phone Number</label>
+                                    <input type="tel" id="booking-phone" class="input-custom" placeholder="e.g. (555) 123-4567" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="booking-notes">Additional Notes / Passcode (Optional)</label>
+                                    <textarea id="booking-notes" class="input-custom" rows="3" style="resize:none;" placeholder="Tell us if you have extra device damage, backup done, passcode, etc."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Success Ticket -->
+                        <div class="booking-step-panel">
+                            <div class="ticket-card">
+                                <div class="ticket-icon"><i class="fas fa-check-circle"></i></div>
+                                <h3 style="font-size:24px; font-family:var(--font-heading); margin-bottom:10px;">Booking Confirmed!</h3>
+                                <p style="color:var(--text-secondary); font-size:14px; max-width:450px; margin:0 auto;">Your repair ticket has been registered on our system. Please present this ticket code at our service center counter or include it on the shipping package.</p>
+                                
+                                <div class="ticket-code-display" id="generated-ticket-code">FIX-892182</div>
+                                
+                                <p style="font-size:12px; color:var(--text-muted); margin-bottom:20px;">Copy this code to look up live status in the Dashboard Tracker below.</p>
+                                <button type="button" onclick="window.location.reload();" class="btn btn-secondary">New Reservation</button>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <div class="wizard-buttons">
+                            <button type="button" class="btn btn-secondary" id="booking-prev" style="display:none;"><i class="fas fa-chevron-left"></i> Back</button>
+                            <button type="button" class="btn btn-primary" id="booking-next" style="margin-left:auto;">Next <i class="fas fa-chevron-right"></i></button>
+                            <button type="submit" class="btn btn-primary" id="booking-submit" style="display:none; margin-left:auto;">Generate Ticket <i class="fas fa-ticket-alt"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Customer Repair Tracker Dashboard -->
+            <div class="dashboard-container scroll-animate" style="margin-top: 100px;">
+                <div class="section-title-block" style="margin-bottom: 30px;">
+                    <p>Live Tracking</p>
+                    <h2>Customer Repair <span class="glow-text">Status Tracker</span></h2>
+                    <div class="subtitle" style="font-size: 15px;">Input your ticket code (e.g. `FIX-783241`) to track diagnostic status, components allocation, testing, and pickup readiness.</div>
+                </div>
+
+                <!-- Tracker Search Input -->
+                <div class="tracker-search">
+                    <div class="search-input-wrap">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="tracker-code-input" placeholder="Enter Ticket Code (e.g., FIX-783241)" aria-label="Enter Ticket Code">
+                        <button id="tracker-search-btn" class="btn btn-primary" style="padding: 10px 24px; border-radius: var(--radius-full); font-size:13px; margin:0;">Track</button>
+                    </div>
+                </div>
+
+                <!-- Live Status Dashboard Panel (Initially Hidden) -->
+                <div class="glass-card scroll-animate" id="tracker-details-wrapper" style="display:none; padding:40px;">
+                    <div class="dashboard-layout">
+                        <!-- Left Panel: Milestones -->
+                        <div>
+                            <h3 style="font-size:20px; font-family:var(--font-heading); margin-bottom:20px;">Repair Milestones</h3>
+                            
+                            <div class="tracker-timeline">
+                                <div class="tracker-timeline-bar"></div>
+                                
+                                <!-- Node 1 -->
+                                <div class="tracker-node completed">
+                                    <h4>Checked In & Registered</h4>
+                                    <p>Device received at Galleria Service Center counter. Initial checklist log completed.</p>
+                                </div>
+                                <!-- Node 2 -->
+                                <div class="tracker-node current">
+                                    <h4>Diagnostic & Part Verification</h4>
+                                    <p>Technician analyzing logic boards. Premium components allocated from inventory.</p>
+                                </div>
+                                <!-- Node 3 -->
+                                <div class="tracker-node">
+                                    <h4>Repairing & Recalibration</h4>
+                                    <p>Replacing display panel, soldering components, and cleaning charging contacts.</p>
+                                </div>
+                                <!-- Node 4 -->
+                                <div class="tracker-node">
+                                    <h4>Multi-Point Quality Test</h4>
+                                    <p>Testing display touch points, camera focus, battery heat limits, and cellular band signals.</p>
+                                </div>
+                                <!-- Node 5 -->
+                                <div class="tracker-node">
+                                    <h4>Ready for Collection</h4>
+                                    <p>Repair complete! Statement certificate logged. Please collect at counter.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Meta Details -->
+                        <div style="display:flex; flex-direction:column; gap:20px;">
+                            <h3 style="font-size:20px; font-family:var(--font-heading); margin-bottom:5px;">Ticket Info</h3>
+                            
+                            <div class="dashboard-meta-grid">
+                                <div class="meta-box">
+                                    <span>Device</span>
+                                    <p id="track-device-name">iPhone 15 Pro Max</p>
+                                </div>
+                                <div class="meta-box">
+                                    <span>Repair Type</span>
+                                    <p id="track-issue-desc">Screen Replacement</p>
+                                </div>
+                                <div class="meta-box">
+                                    <span>Est. Cost</span>
+                                    <p id="track-est-cost" class="glow-text" style="font-weight:700;">$219.00</p>
+                                </div>
+                                <div class="meta-box">
+                                    <span>Logged Date</span>
+                                    <p id="track-est-date">05/24/2026</p>
+                                </div>
+                            </div>
+
+                            <div style="background: rgba(255, 85, 0, 0.05); border: 1px solid var(--border-glow); border-radius: var(--radius-sm); padding: 20px; margin-top:10px;">
+                                <h4 style="font-size:14px; color:var(--text-primary); margin-bottom:5px;"><i class="fas fa-info-circle" style="color:var(--accent-orange); margin-right:8px;"></i>Technician Update</h4>
+                                <p style="font-size:13px; color:var(--text-secondary); line-height:1.4;">"Diagnostic checks verify logic board current flow is normal. Screen replacement components are allocated. Repair commencing." - Alex Mercer, Lead Eng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

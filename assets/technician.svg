@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 340" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff5500" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff5500" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="orangeGlow">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="150" cy="160" r="100" fill="#ff5500" opacity="0.05" filter="url(#orangeGlow)"/>
+
+  <!-- Body / torso -->
+  <rect x="105" y="155" width="90" height="95" rx="12" fill="#1a1a2e" stroke="#ff5500" stroke-width="1.5" stroke-opacity="0.25"/>
+
+  <!-- Lab coat lapels -->
+  <path d="M135 160 L150 190 L165 160" fill="none" stroke="#ff5500" stroke-width="1.5" stroke-opacity="0.15"/>
+
+  <!-- Collar -->
+  <rect x="130" y="152" width="40" height="10" rx="4" fill="#2a2a3e"/>
+
+  <!-- Head -->
+  <ellipse cx="150" cy="120" rx="32" ry="34" fill="#2a2a3e" stroke="#ff5500" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Hair -->
+  <path d="M118 115 Q120 90 150 88 Q180 90 182 115" fill="#1a1a2e" stroke="#ff5500" stroke-width="0.5" stroke-opacity="0.2"/>
+
+  <!-- Eyes -->
+  <ellipse cx="140" cy="118" rx="4" ry="3" fill="#fff" fill-opacity="0.1"/>
+  <ellipse cx="160" cy="118" rx="4" ry="3" fill="#fff" fill-opacity="0.1"/>
+  <circle cx="140" cy="118" r="2" fill="#ff5500" fill-opacity="0.3"/>
+  <circle cx="160" cy="118" r="2" fill="#ff5500" fill-opacity="0.3"/>
+
+  <!-- Eyebrows -->
+  <path d="M134 112 Q140 108 146 112" stroke="#888" stroke-width="1" fill="none" opacity="0.3"/>
+  <path d="M154 112 Q160 108 166 112" stroke="#888" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Smile -->
+  <path d="M143 130 Q150 136 157 130" stroke="#ff5500" stroke-width="1" fill="none" opacity="0.3"/>
+
+  <!-- Magnifying visor on head -->
+  <g transform="translate(175, 100)">
+    <rect x="-3" y="-5" width="25" height="8" rx="3" fill="#ff5500" fill-opacity="0.15" stroke="#ff5500" stroke-width="0.5" stroke-opacity="0.3"/>
+    <rect x="-3" y="-5" width="25" height="8" rx="3" fill="#ff5500" fill-opacity="0.05"/>
+    <circle cx="18" cy="3" r="10" fill="none" stroke="#ff5500" stroke-width="1.5" stroke-opacity="0.25"/>
+    <circle cx="18" cy="3" r="10" fill="#ff5500" fill-opacity="0.03"/>
+  </g>
+
+  <!-- Left arm holding phone -->
+  <path d="M105 170 L75 195 L68 220" stroke="#1a1a2e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Glove left -->
+  <circle cx="68" cy="220" r="8" fill="#ff5500" fill-opacity="0.15"/>
+
+  <!-- Phone in left hand -->
+  <rect x="50" y="195" width="35" height="60" rx="5" fill="#2a2a3e" stroke="#ff5500" stroke-width="1" stroke-opacity="0.3"/>
+  <rect x="54" y="200" width="27" height="40" rx="3" fill="#0f0f1a"/>
+  <!-- Screen glow -->
+  <rect x="54" y="200" width="27" height="40" rx="3" fill="#ff5500" fill-opacity="0.05"/>
+  <rect x="58" y="208" width="19" height="3" rx="1" fill="#ff5500" fill-opacity="0.3"/>
+  <rect x="58" y="216" width="14" height="3" rx="1" fill="#fff" fill-opacity="0.08"/>
+  <rect x="58" y="224" width="19" height="3" rx="1" fill="#fff" fill-opacity="0.08"/>
+
+  <!-- Right arm with screwdriver -->
+  <path d="M195 170 L225 195 L232 215" stroke="#1a1a2e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Glove right -->
+  <circle cx="232" cy="215" r="8" fill="#ff5500" fill-opacity="0.15"/>
+
+  <!-- Screwdriver in right hand -->
+  <g transform="rotate(-30, 232, 215)">
+    <rect x="228" y="195" width="4" height="28" rx="2" fill="#888" fill-opacity="0.5"/>
+    <rect x="229" y="190" width="2" height="8" rx="1" fill="#ff5500" fill-opacity="0.4"/>
+    <rect x="229.5" y="186" width="1" height="5" rx="0.5" fill="#ccc" fill-opacity="0.3"/>
+  </g>
+
+  <!-- ESD wrist strap on right arm -->
+  <path d="M200 175 Q210 178 215 180" stroke="#ff5500" stroke-width="1.5" stroke-opacity="0.2" fill="none"/>
+  <circle cx="215" cy="180" r="3" fill="none" stroke="#ff5500" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Workbench -->
+  <rect x="10" y="250" width="280" height="6" rx="3" fill="#ff5500" fill-opacity="0.12"/>
+  <rect x="10" y="256" width="280" height="2" rx="1" fill="#ff5500" fill-opacity="0.05"/>
+
+  <!-- Anti-static mat lines -->
+  <rect x="20" y="248" width="260" height="2" rx="1" fill="#00ff66" fill-opacity="0.06"/>
+
+  <!-- Tools on bench -->
+  <rect x="40" y="243" width="15" height="5" rx="1.5" fill="#888" fill-opacity="0.3"/>
+  <circle cx="100" cy="246" r="3" fill="#ff5500" fill-opacity="0.15"/>
+  <rect x="220" y="244" width="20" height="4" rx="1" fill="#888" fill-opacity="0.2"/>
+
+  <!-- Label -->
+  <text x="150" y="300" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff5500" fill-opacity="0.3" letter-spacing="2">CERTIFIED TECHNICIAN</text>
+</svg>

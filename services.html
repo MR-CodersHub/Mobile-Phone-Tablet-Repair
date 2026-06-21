@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Technical Repair Matrix | FixPoint</title>
+    <meta name="description" content="Explore our certified diagnostic and repair packages. Standard OEM parts, speed-turnaround calibrations, and lifetime warranties.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        if (localStorage.getItem('theme') === 'light') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="navbar-wrapper">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="FixPoint Logo" style="height: 28px; width: auto; border-radius: 4px;">
+                    <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="home2.html">Home2</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-rtl" id="rtl-toggle-btn" aria-label="Toggle RTL Direction" title="RTL">
+                        <i class="fas fa-arrow-right-arrow-left"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </button>
+                    <a href="booking.html" class="btn btn-primary" style="padding: 10px 20px; font-size: 13px;">Book Repair</a>
+                    <a href="login.html" class="btn-login" style="padding: 10px 20px; font-size: 13px; border: 1px solid var(--accent-orange); color: var(--accent-orange); background: transparent; border-radius: var(--radius-sm); text-decoration: none; display: inline-flex; align-items: center; gap: 6px;"><i class="fas fa-user"></i> Login</a>
+                    <button class="hamburger" aria-label="Toggle Navigation">
+                        <div class="hamburger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home2</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="booking.html">Book Repair</a></li>
+        </ul>
+    </div>
+
+    <!-- Banner & Search Section -->
+    <section class="section-padding hero-banner">
+        <div class="banner-grid-overlay"></div>
+        <i class="fas fa-screwdriver-wrench banner-brand-icon"></i>
+        <div class="banner-accent banner-accent-1"></div>
+        <div class="banner-accent banner-accent-2"></div>
+        <div class="banner-accent banner-accent-3"></div>
+        <div class="banner-accent banner-accent-4"></div>
+        <div class="banner-accent banner-accent-5"></div>
+        <div class="banner-accent banner-accent-6"></div>
+        <div class="container">
+            <div class="section-title-block scroll-animate animated">
+                <p>Service Center Capabilities</p>
+                <h1>Hardware Repair <span class="glow-text">Specifications</span></h1>
+                <div class="subtitle">Browse or search our technical repair packages. We calibrate all replaced modules to original manufacturer tolerances using specialized instrumentation.</div>
+            </div>
+
+            <!-- Sleek Control Center: Search & Filter Tabs -->
+            <div class="glass-card scroll-animate animated" style="max-width: 100%; margin: 0 auto; padding: 20px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+                    <!-- Search Input -->
+                    <div class="search-input-wrap" style="flex:1; min-width:200px;">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search packages (e.g. Screen, Battery...)" aria-label="Search Specifications">
+                    </div>
+                    <!-- Filter category pills -->
+                    <div class="filter-tabs">
+                        <button class="filter-tab active" data-filter="all">All Packages</button>
+                        <button class="filter-tab" data-filter="screen">Display</button>
+                        <button class="filter-tab" data-filter="battery">Power</button>
+                        <button class="filter-tab" data-filter="charging">Ports</button>
+                        <button class="filter-tab" data-filter="motherboard">Logic Board</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Specification Matrix -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="services-spec-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px; align-items: start;">
+                
+                <!-- Card 1: Screen Replacement -->
+                <div class="glass-card filterable-item scroll-animate" data-category="screen display" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-mobile-alt"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Display Panel</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Premium Screen Replacement</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Replacement of fractured screen lenses, bleeding liquid digitizers, and cracked glass panels. Includes multi-point optical calibration.</p>
+                        
+                        <!-- Specs List (High Contrast & Adaptive) -->
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">20 Minutes</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Lifetime Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Parts Standard:</span>
+                                <span style="font-weight: 600; color: #00ff66;">OEM Grade A+</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Calibration:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $89</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="screen-repair.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Battery Replacement -->
+                <div class="glass-card filterable-item scroll-animate" data-category="battery power" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-battery-three-quarters"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Power Cell</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Battery Replacement</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Replacement of swollen, short-cycling, or low-capacity battery components. Includes eco-friendly battery disposal.</p>
+                        
+                        <!-- Specs List (High Contrast & Adaptive) -->
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">15 Minutes</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Lifetime Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Parts Standard:</span>
+                                <span style="font-weight: 600; color: #00ff66;">Premium Certified</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Safety Recycle:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $49</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="battery-replacement.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Charging Port Repair -->
+                <div class="glass-card filterable-item scroll-animate" data-category="charging port plug" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-bolt"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Charging Port</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Charging Port Repair</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Correction of contact pin alignments, internal pocket dirt extraction, or replacement of charging flex assemblies.</p>
+                        
+                        <!-- Specs List (High Contrast & Adaptive) -->
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">25 Minutes</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">1-Year Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Parts Standard:</span>
+                                <span style="font-weight: 600; color: #00ff66;">Original Grade</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Clean-out:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $59</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="charging-port-repair.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Motherboard soldering -->
+                <div class="glass-card filterable-item scroll-animate" data-category="motherboard micro solder logic" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-microchip"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Logic Board</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Motherboard Micro-Soldering</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Fine micro-circuit soldering to fix short circuits, trace anomalies, damaged micro-resistors, or faulty IC chips.</p>
+                        
+                        <!-- Specs List (High Contrast & Adaptive) -->
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">1 - 3 Days</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">90-Day Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Lab Equipment:</span>
+                                <span style="font-weight: 600; color: #00ff66;">Digital Microscope</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Data Preservation:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Priority</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $169</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="motherboard-repair.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Camera Repair -->
+                <div class="glass-card filterable-item scroll-animate" data-category="camera lens sensor" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-camera"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Camera Module</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Camera Lens & Sensor Replacement</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Repair of cracked lens glass, faulty autofocus actuators, hazy sensor filters, and rear/front camera module swaps with full calibration.</p>
+                        
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">30 Minutes</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Lifetime Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Parts Standard:</span>
+                                <span style="font-weight: 600; color: #00ff66;">OEM Grade A+</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Image Calibration:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $69</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="camera-repair.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Speaker / Audio Repair -->
+                <div class="glass-card filterable-item scroll-animate" data-category="audio speaker earpiece" style="border-top: 3px solid var(--accent-orange); border-radius: var(--radius-md); padding: 30px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div class="service-icon" style="margin: 0; width: 50px; height: 50px; border-radius: var(--radius-sm);"><i class="fas fa-volume-up"></i></div>
+                            <span style="font-size: 10px; font-weight: 700; color: var(--accent-orange); text-transform: uppercase; background: var(--accent-orange-dim); padding: 4px 10px; border-radius: var(--radius-full); border: 1px solid var(--border-glow);">Audio System</span>
+                        </div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px; font-family: var(--font-heading); color: var(--text-primary);">Speaker & Earpiece Repair</h3>
+                        <p style="color: var(--text-secondary); font-size: 13.5px; margin-bottom: 20px; line-height: 1.5;">Diagnosis and replacement of distorted bottom speakers, muffled earpiece receivers, faulty microphones, and audio IC circuit issues.</p>
+                        
+                        <div style="border: 1px solid var(--border-glass); border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 25px; background: rgba(255, 255, 255, 0.01);">
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Repair Speed:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">20 Minutes</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Warranty Tier:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">1-Year Cover</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; border-bottom: 1px solid var(--border-glass); background: rgba(255, 85, 0, 0.02); font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Parts Standard:</span>
+                                <span style="font-weight: 600; color: #00ff66;">Premium Grade</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px 15px; font-size: 13px;">
+                                <span style="color: var(--text-secondary);">Audio Test:</span>
+                                <span style="font-weight: 600; color: var(--text-primary);">Included</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-glass); padding-top: 20px; margin-top: auto;">
+                        <div style="display: flex; flex-direction: column;">
+                            <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase;">Diagnostic Price</span>
+                            <span style="font-size: 24px; font-weight: 800; color: var(--text-primary); font-family: var(--font-heading);">From $49</span>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="speaker-repair.html" style="padding: 10px 16px; font-size: 12px; color: var(--text-secondary);"><i class="fas fa-info-circle"></i></a>
+                            <a href="booking.html" class="btn btn-primary" style="padding: 10px 22px; font-size: 13px; border-radius: var(--radius-sm);">Book Fix</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redesigned FAQ & Metrics Section (Split-Screen) -->
+    <section class="section-padding" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-glass);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 50px; align-items: start;">
+                <!-- Left Pane: Stats/Metrics Panel -->
+                <div class="scroll-animate" style="position: sticky; top: 100px;">
+                    <p style="color: var(--accent-orange); text-transform: uppercase; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 10px;">Why We Are Trusted</p>
+                    <h2 style="font-size: 38px; margin-bottom: 25px;">Verified Repair <br><span class="glow-text">Performance Stats</span></h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px; font-size: 15px;">We log every diagnostics appraisal to maintain total quality control. Check how our team performs at West Galleria Service Center #4.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <!-- Metric 1 -->
+                        <div>
+                            <div style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px;">
+                                <span>First-Time Success Rate</span>
+                                <span style="color: #00ff66;">98.4%</span>
+                            </div>
+                            <div class="rating-bar" style="height: 6px;"><div class="rating-bar-fill" style="width: 98.4%; background: #00ff66;"></div></div>
+                        </div>
+
+                        <!-- Metric 2 -->
+                        <div>
+                            <div style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px;">
+                                <span>OEM Component Integrity</span>
+                                <span style="color: var(--accent-orange);">100%</span>
+                            </div>
+                            <div class="rating-bar" style="height: 6px;"><div class="rating-bar-fill" style="width: 100%;"></div></div>
+                        </div>
+
+                        <!-- Metric 3 -->
+                        <div>
+                            <div style="display:flex; justify-content:space-between; font-size:14px; font-weight:600; margin-bottom:8px;">
+                                <span>Express Repair (Under 30m)</span>
+                                <span style="color: #ffaa00;">91.2%</span>
+                            </div>
+                            <div class="rating-bar" style="height: 6px;"><div class="rating-bar-fill" style="width: 91.2%; background: #ffaa00;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Pane: Translucent Accordion Container -->
+                <div class="accordion-container scroll-animate" style="margin-top: 0;">
+                    <!-- Item 1 -->
+                    <div class="accordion-item" style="background: var(--bg-card); border-color: var(--border-glass);">
+                        <div class="accordion-header" style="font-size: 17px; padding: 22px 25px;">
+                            How long does a typical repair take?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            Most common repairs like screen and battery replacements take around 15 to 30 minutes. You can wait at our service center counter, grab a drink, or browse nearby stores while we finish.
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item" style="background: var(--bg-card); border-color: var(--border-glass);">
+                        <div class="accordion-header" style="font-size: 17px; padding: 22px 25px;">
+                            Do you offer a warranty on repairs?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            Yes! We offer a lifetime warranty on parts and labor for screen and battery replacements. If touch accuracy degrades, simply visit our service center for a free replacement.
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item" style="background: var(--bg-card); border-color: var(--border-glass);">
+                        <div class="accordion-header" style="font-size: 17px; padding: 22px 25px;">
+                            Will I lose my data during the repair?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            No. We do not access or reset your personal data during screen, port, or battery repairs. However, we advise creating a backup prior to the repair for hardware safety.
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item" style="background: var(--bg-card); border-color: var(--border-glass);">
+                        <div class="accordion-header" style="font-size: 17px; padding: 22px 25px;">
+                            Do you use original components?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-content">
+                            We use original grade premium components (OEM specifications) which undergo strict quality testing to ensure identical color profile, refresh speed, and touch sensitivity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-flex; align-items: center; gap: 10px;">
+                        <img src="assets/logo.png" alt="FixPoint Logo" style="height: 24px; width: auto; border-radius: 4px;">
+                        <span class="logo-fix">FIX</span><span class="logo-point">POINT</span>
+                    </a>
+                    <p>Premium mobile phone & tablet repairs at your convenience. Speed, quality, and trust are our core pillars.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="home2.html">Home2</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <div class="footer-hours-grid">
+                        <span>Mon - Fri:</span> <span>9:00 AM - 7:00 PM</span>
+                        <span>Saturday:</span> <span>10:00 AM - 5:00 PM</span>
+                        <span>Sunday:</span> <span>Closed</span>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Newsletter</h4>
+                    <p>Subscribe to receive news, exclusive offers, and tech repair tips.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required aria-label="Email Input">
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FixPoint. All rights reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
